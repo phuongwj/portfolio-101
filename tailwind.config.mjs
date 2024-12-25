@@ -8,8 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#1B2028",
+        lgblue: '#4DB2D7',
+        dkishblue: '#4B5975',
+        lgskin: '#CCCCB5',
       },
     },
   },
