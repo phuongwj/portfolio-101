@@ -8,10 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#1B2028",
-        lgblue: '#4DB2D7',
-        dkishblue: '#4B5975',
-        lgskin: '#CCCCB5',
+        main: "#1E1E1E",
+        secondary: '#467CCC',
+        third: '#4D4D4D',
       },
     },
   },
