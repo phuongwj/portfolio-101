@@ -1,34 +1,45 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import { useState } from 'react';
 
 export default function Header() {
-  return (
-    <main class="w-fit text-white">
-        <section class="flex flex-wrap font-bold text-3xl">
-            <h1 class="opacity-70">
-                Hi, I'm 
-            </h1>
-            <h1 class="text-mainC opacity-100 hover:text-white hover:opacity-45 transition duration-500">
-                &nbsp;Phuong
-            </h1>
-        </section>
-        <section class="flex flex-wrap font-bold text-lg">
-            <h2 class="opacity-45">
-                also known as 
-            </h2>
-            <h2 class="opacity-70 hover:text-mainC hover:opacity-100 transition duration-500">
-                &nbsp;Julia
-            </h2>
-        </section>
-        <p class="text-secondaryC">
-            An aspiring & dedicated developer
-        </p>
-        <p class="border-2  border-secondaryC opacity-70">
-            testing
-        </p>
-        
-    </main>
+    const [isHover, setHover] = useState(false);
+
+    return (
+        <main class="w-fit text-white">
+            <section class="flex flex-wrap font-bold text-3xl">
+                <h1 class="opacity-70">
+                    Hi, I'm 
+                </h1>
+                <h1 class={
+                    (isHover ? "text-white opacity-45 transition duration-500" : "text-mainC opacity-100 transition duration-500")}
+                >
+                    &nbsp;Phuong
+                </h1>
+            </section>
+            <section class="flex flex-wrap font-bold text-lg">
+                <h2 class="opacity-45">
+                    also known as 
+                </h2>
+                <h2 class={
+                    (isHover ? "text-mainC opacity-100 transition duration-500" : "opacity-70 transition duration-500")}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(false)}
+                >
+                    &nbsp;Julia
+                </h2>
+            </section>
+            <p class="text-secondaryC">
+                An aspiring & dedicated developer
+            </p>
+            <p class="border-2  border-secondaryC opacity-70">
+                testing
+            </p>
+        </main>
 
     /*
+
+    " hover:"
     After </main>, add in the section for em links.
     Make gaps in between the texts like how brittany has it.
     */
@@ -48,5 +59,5 @@ export default function Header() {
     https://hackernoon.com/how-to-handle-hover-events-in-react
     something like this but we have tailwind.
     */
-  )
+    )
 }
