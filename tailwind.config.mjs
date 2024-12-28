@@ -9,9 +9,10 @@ export default {
     extend: {
       colors: {
         main: "#1E1E1E",
-        secondary: '#467CCC',
-        third: '#4D4D4D',
-      },
+        secondary: '#191919',
+        mainC: '#467CCC',
+        secondaryC: '#4D4D4D',
+      }
     },
   },
   plugins: [],
