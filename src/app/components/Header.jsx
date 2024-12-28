@@ -2,13 +2,23 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <section class="text-white w-fit">
-        <h1 class="font-bold text-3xl opacity-70 text-white hover:text-secondary hover:opacity-90 transition-all">
-            Phuong Pham
-        </h1>
-        <h2 class="font-bold text-lg opacity-45 text-white">
-            - aka <span class="hover:text-secondary transition-all"> Julia </span>
-        </h2>
+    <section class="w-fit text-white">
+        <div class="flex flex-wrap font-bold text-3xl">
+            <h1 class="opacity-70">
+                Hi, I'm 
+            </h1>
+            <h1 class="opacity-70 hover:text-secondary hover:opacity-100 transition-all">
+                &nbsp;Phuong
+            </h1>
+        </div>
+        <div class="flex flex-wrap font-bold text-lg">
+            <h2 class="opacity-45">
+                - aka 
+            </h2>
+            <h2 class="opacity-45 hover:text-secondary hover:opacity-100 transition-all">
+                &nbsp;Julia
+            </h2>
+        </div>
         <p class="text-third">
             An aspiring &
         </p>
