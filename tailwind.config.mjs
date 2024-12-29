@@ -12,6 +12,9 @@ export default {
         secondary: '#191919',
         mainC: '#467CCC',
         secondaryC: '#4D4D4D',
+      },
+      height: {
+        '6.5': '1.625rem',
       }
     },
   },

@@ -9,3 +9,15 @@ because you don't want it to be too similar you know.
 
 - Do the box similar to the testing box inside Header.jsx
 */
+
+import React from 'react'
+
+export default function Experiences() {
+    return (
+        <div>
+            <p class="border-2  border-secondaryC opacity-70">
+                        testing
+            </p>
+        </div>
+    )
+}
