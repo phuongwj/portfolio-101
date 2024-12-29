@@ -19,26 +19,33 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html class="bg-main" lang="en"> 
+    <html lang="en"> 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-main`}
       >
-        <Header/>
+        <div className="flex min-h-screen px-32">
+          <Header/>
+          <section>
+            
+          </section>
+        </div>
         {children}
       </body>
     </html>
   );
 
   /*
-  1. Flex these both
-  - Put <Header/> first (i.e. my name and all those short texts underneath)
-  - Add links inside header.
-  2. Flex these both
-  - Put <Experience/> next
-  - Put <Projects/> next
-  3.
-  - Put <Footer/> last, make it flex-end I think????? 
-  4. 
+  Add <div> inside <body>
+  Add <Header/> inside <div>
+  Add <section> under <Header/>
+  Add <Experiences/> inside <section>
+  Add <Projects/> inside <section>
+  Add <Tools/> inside <section>
+  Make <div> flex, make that there's a gap in between
+  Look at Brittany's example.
+  */
+
+  /*
   - Make a heart for the icon website, colour it blue. 
   5.
   - Make a loading screen a milk carton? lol like the background is the 

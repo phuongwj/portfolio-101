@@ -7,8 +7,8 @@ export default function Header() {
     const [isHover, setHover] = useState(false);
 
     return (
-        <main className="w-fit text-white">
-            <section className="flex flex-wrap font-bold text-3xl">
+        <main className="w-fit text-white py-28">
+            <section className="flex flex-wrap font-bold text-5xl">
                 <h1 className="opacity-70">
                     Hi, I'm 
                 </h1>
@@ -18,7 +18,7 @@ export default function Header() {
                     &nbsp;Phuong
                 </h1>
             </section>
-            <section className="flex flex-wrap font-bold text-lg">
+            <section className="flex flex-wrap font-bold text-xl mt-2">
                 <h2 className="opacity-45">
                     also known as 
                 </h2>
@@ -30,10 +30,10 @@ export default function Header() {
                     &nbsp;Julia
                 </h2>
             </section>
-            <p className="text-secondaryC">
+            <p className="text-secondaryC mt-1">
                 An aspiring & dedicated developer
             </p>
-            <footer class="w-fit flex flex-wrap gap-2">
+            <footer class="w-fit flex flex-wrap gap-2 mt-4">
                 <Link href={'https://github.com/phuongwj'} target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
                         className="h-6.5 w-6.5 fill-secondaryC hover:fill-white hover:opacity-45 transition duration-500">
