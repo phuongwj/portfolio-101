@@ -8,6 +8,9 @@ Maybe make it similar to monkeytype, but make it different too
 because you don't want it to be too similar you know.
 
 - Do the box similar to the testing box inside Header.jsx
+
+- Get data from json, take the last index and put it first
+(i.e. last dictionary from the list)
 */
 
 import React from 'react'
