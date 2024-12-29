@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
+import Experiences from "@/app/components/Experiences";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
         <div className="flex min-h-screen px-32">
           <Header/>
           <section>
-            
+            <Experiences/>
           </section>
         </div>
         {children}

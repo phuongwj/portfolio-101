@@ -13,9 +13,11 @@ export default function Header() {
                     Hi, I'm 
                 </h1>
                 <h1 className={
-                    (isHover ? "text-white opacity-70 transition duration-500" : "text-mainC opacity-100 transition duration-500")}
+                    (isHover 
+                        ? "ml-3 text-white opacity-70 transition duration-500" 
+                        : "ml-3 text-mainC opacity-100 transition duration-500")}
                 >
-                    &nbsp;Phuong
+                    Phuong
                 </h1>
             </section>
             <section className="flex flex-wrap font-bold text-xl mt-2">
@@ -33,7 +35,7 @@ export default function Header() {
             <p className="text-secondaryC mt-1">
                 An aspiring & dedicated developer
             </p>
-            <footer class="w-fit flex flex-wrap gap-2 mt-4">
+            <footer className="w-fit flex flex-wrap gap-2 mt-4">
                 <Link href={'https://github.com/phuongwj'} target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
                         className="h-6.5 w-6.5 fill-secondaryC hover:fill-white hover:opacity-45 transition duration-500">

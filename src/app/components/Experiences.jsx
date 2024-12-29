@@ -15,7 +15,7 @@ import React from 'react'
 export default function Experiences() {
     return (
         <div>
-            <p class="border-2  border-secondaryC opacity-70">
+            <p class="text-white border-2 border-secondaryC opacity-70">
                         testing
             </p>
         </div>
