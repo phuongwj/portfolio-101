@@ -18,9 +18,9 @@ import exps from "@/local-json/experiences"
 
 export default function Experiences() {
     return (
-        <div>
-            <ul className="flex flex-wrap text-white opacity-45">
-                <div>
+        <main>
+            <ul className="h-20 flex flex-row gap-7 text-white text-lg opacity-45 overflow-x-auto">
+                <section>
                     {
                         exps.reverse().map( (exp) => (
                             <li>
@@ -28,8 +28,8 @@ export default function Experiences() {
                             </li>
                         ))
                     }
-                </div>
-                <div>
+                </section>
+                <section>
                     {
                         exps.map( (exp) => (
                             <li>
@@ -37,9 +37,9 @@ export default function Experiences() {
                             </li>
                         ))
                     }
-                </div>
+                </section>
             </ul>
-        </div>
+        </main>
     )
 }
 
