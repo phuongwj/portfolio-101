@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "inSanity",
+        "time": "01/24",
+        "info": ""
+    },
+    {
+        "id": 2,
+        "title": "Tien Len",
+        "time": "06/24 - Present",
+        "info": ""
+    },
+    {
+        "id": 3,
+        "title": "Orrery Web App",
+        "time": "10/24",
+        "info": ""
+    },
+    {
+        "id": 4,
+        "title": "Front-end Compiler",
+        "time": "10/24 - 12/24",
+        "info": ""
+    },
+    {
+        "id": 5,
+        "title": "portfolio-101",
+        "time": "12/24 - 01/25",
+        "info": ""
+    }
+]
