@@ -4,21 +4,26 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
-/* Track */
+/* Track Not On Hover*/
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: none;
 }
 
-/* Handle */
+/* Thumb Not On Hover*/
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
+    background: none;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+/* Track On Hover*/
+:hover::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+/* Thumb On Hover*/
+:hover::-webkit-scrollbar-thumb {
+    background: #4D4D4D;
+    border-radius: 5px;
 }
