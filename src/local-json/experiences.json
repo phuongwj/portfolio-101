@@ -2,25 +2,25 @@
     {
         "id": 1,
         "title": "Cashier PT",
-        "time": "04/24 - 09/24",
+        "org": "@ Wholesale Club",
+        "location": "Halifax, NS",
+        "time": "Apr 2024 - Sept 2024",
         "info": ""
     },
     {
         "id": 2,
         "title": "Full-Stack Software Developer Intern",
-        "time": "06/24 - 08/24",
+        "org": "@ HCI4Good Lab at Dalhousie University",
+        "location": "Halifax, NS",
+        "time": "June 2024 - Aug 2024",
         "info": ""
     },
     {
         "id": 3,
         "title": "Teaching Assistant",
-        "time": "09/24 - Present",
-        "info": ""
-    },
-    {
-        "id": 4,
-        "title": "Intern bla bla bla",
-        "time": "05/24 - 09/24",
+        "org": "@ Dalhousie University",
+        "location": "Halifax, NS",
+        "time": "Sept 2024 - Present",
         "info": ""
     }
 ]

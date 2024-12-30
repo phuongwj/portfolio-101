@@ -18,30 +18,23 @@ import exps from "@/local-json/experiences"
 
 export default function Experiences() {
     return (
-        <main className="h-20 overflow-y-scroll">
-            <ul className="max-h-full flex flex-row gap-7 text-white text-lg">
-                <section>
-                    {
-                        exps.reverse().map( (exp) => (
-                            <li key={exp.id}>
-                                {exp.title}
-                            </li>
-                        ))
-                    }
-                </section>
-                <section>
-                    {
-                        exps.map( (exp) => (
-                            <li key={exp.id}>
-                                {exp.time}
-                            </li>
-                        ))
-                    }
-                </section>
+        <main className="h-44 overflow-y-scroll">
+            <ul className="max-h-full flex flex-col gap-7">
+                {exps.reverse().map( (exp) => (
+                    <li key={exp.id} className="flex flex-col">
+                        <section className="text-lg flex flex-row justify-between gap-32">
+                            <h2 className="text-white font-semibold opacity-45">{exp.title}</h2>
+                            <p className="text-secondaryC font-medium">{exp.time}</p>
+                        </section>
+                        <h3 className="text-base text-secondaryC">{exp.org}</h3>
+                        <h4 className="text-base text-secondaryC">{exp.location}</h4>
+                    </li>
+                ))}
             </ul>
         </main>
     )
 }
+
 
 /*
 <p class="text-white border-2 border-secondaryC opacity-70">
