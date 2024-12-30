@@ -14,13 +14,37 @@ because you don't want it to be too similar you know.
 */
 
 import React from 'react'
+import exps from "@/local-json/experiences"
 
 export default function Experiences() {
     return (
         <div>
-            <p class="text-white border-2 border-secondaryC opacity-70">
-                        testing
-            </p>
+            <ul className="flex flex-wrap text-white opacity-45">
+                <div>
+                    {
+                        exps.reverse().map( (exp) => (
+                            <li>
+                                {exp.title}
+                            </li>
+                        ))
+                    }
+                </div>
+                <div>
+                    {
+                        exps.map( (exp) => (
+                            <li>
+                                {exp.time}
+                            </li>
+                        ))
+                    }
+                </div>
+            </ul>
         </div>
     )
 }
+
+/*
+<p class="text-white border-2 border-secondaryC opacity-70">
+    testing
+</p>
+*/
