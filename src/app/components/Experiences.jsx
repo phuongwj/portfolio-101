@@ -3,12 +3,12 @@ import exps from "@/local-json/experiences"
 
 export default function Experiences() {
     return (
-        <main className="flex flex-col gap-1 p-8 rounded-2xl bg-secondary">
-            <section className="font-bold text-2xl text-white opacity-70">
+        <main className="flex flex-col gap-3 p-8 rounded-3xl bg-secondary">
+            <section className="font-bold text-2xl border-b-1 pb-1 text-white opacity-70">
                 Experiences
             </section>
-            <section className="h-44 pr-4 overflow-y-scroll">
-                <ul className="max-h-full flex flex-col gap-7">
+            <section className="h-44 px-4 overflow-y-scroll">
+                <ul className="max-h-full flex flex-col gap-4">
                     {exps.reverse().map( (exp) => (
                         <li key={exp.id} className="flex flex-col">
                             <section className="text-lg flex flex-row justify-between gap-32">
