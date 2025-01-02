@@ -7,23 +7,23 @@
     width: 7px;
 }
 
-/* Track Not On Hover*/
+/* Track Not On Hover */
 ::-webkit-scrollbar-track {
-    background: none;
+    background-color: none;
 }
 
-/* Thumb Not On Hover*/
+/* Thumb Not On Hover */
 ::-webkit-scrollbar-thumb {
-    background: none;
+    background-color: none;
 }
 
-/* Track On Hover*/
+/* Track On Hover */
 :hover::-webkit-scrollbar-track {
-    background: #191919;
+    background-color: #191919;
 }
 
-/* Thumb On Hover*/
+/* Thumb On Hover */
 :hover::-webkit-scrollbar-thumb {
-    background: #4D4D4D;
+    background-color: #4D4D4D;
     border-radius: 5px;
 }
