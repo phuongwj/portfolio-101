@@ -10,6 +10,7 @@ export default {
       colors: {
         main: "#1E1E1E",
         secondary: '#191919',
+        huh: '#404040',
         mainC: '#467CCC',
         secondaryC: '#4D4D4D',
         wless: '#838383',
@@ -17,6 +18,7 @@ export default {
       height: {
         '6.5': '1.625rem',
         '18': '4.6rem',
+        '30': '7.5rem',
       },
       borderWidth: {
         '1': '1px',

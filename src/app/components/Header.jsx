@@ -9,12 +9,12 @@ export default function Header() {
     return (
         <main className="w-fit text-white py-28">
             <section className="flex flex-wrap font-bold text-5xl">
-                <h1 className="opacity-70">
+                <h1 className="opacity-80">
                     Hi, I'm 
                 </h1>
                 <h1 className={
                     (isHover 
-                        ? "ml-3 text-white opacity-70 transition duration-500" 
+                        ? "ml-3 text-white opacity-80 transition duration-500" 
                         : "ml-3 text-mainC opacity-100 transition duration-500")}
                 >
                     Phuong
@@ -25,14 +25,16 @@ export default function Header() {
                     also known as 
                 </h2>
                 <h2 className={
-                    (isHover ? "text-mainC opacity-100 transition duration-500" : "opacity-70 transition duration-500")}
+                    (isHover 
+                        ? "ml-1 text-mainC cursor-help opacity-100 transition duration-500" 
+                        : "ml-1 opacity-80 cursor-help transition duration-500")}
                     onMouseEnter={() => setHover(true)}
                     onMouseLeave={() => setHover(false)}        
                 >
-                    &nbsp;Julia
+                    Julia
                 </h2>
             </section>
-            <p className="text-secondaryC mt-1">
+            <p className="text-white/30 mt-1">
                 An aspiring & dedicated developer
             </p>
             <footer className="w-fit flex flex-wrap gap-2 mt-4">
