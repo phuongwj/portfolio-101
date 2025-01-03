@@ -26,8 +26,8 @@ export default function Header() {
                 </h2>
                 <h2 className={
                     (isHover 
-                        ? "ml-1 text-mainC cursor-help opacity-100 transition duration-500" 
-                        : "ml-1 opacity-80 cursor-help transition duration-500")}
+                        ? "ml-1.5 text-mainC cursor-help opacity-100 transition duration-500" 
+                        : "ml-1.5 opacity-80 cursor-help transition duration-500")}
                     onMouseEnter={() => setHover(true)}
                     onMouseLeave={() => setHover(false)}        
                 >

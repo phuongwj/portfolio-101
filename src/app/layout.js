@@ -22,12 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en"> 
       <body className="bg-main">
-        <div className="flex min-h-screen px-32 gap-24">
+        <main className="flex min-h-screen px-32 gap-24">
           <Header/>
           <section className="py-16">
             <Experiences/>
           </section>
-        </div>
+        </main>
         {children}
       </body>
     </html>

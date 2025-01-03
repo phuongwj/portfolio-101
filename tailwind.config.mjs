@@ -25,9 +25,10 @@ export default {
       }
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
+  variants: {
+    fill: ['hover', 'focus'], // this line does the trick
+  },
+  plugins: [],
 };
 
 /*
