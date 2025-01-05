@@ -22,16 +22,16 @@ export default function  () {
                     </section>
                     <p className="font-bold text-xl text-white/45 transition duration-500 group-hover/bgg:text-white/80"> Projects </p>
                 </section>  
-                <section className="h-30 px-4 overflow-y-scroll">
-                    <ul className="max-h-full flex flex-col gap-4">
+                <section className="h-40 px-4 overflow-y-scroll">
+                    <ul className="flex flex-wrap gap-y-5">
                         {projsSorted.map((proj) => (
-                            <li key={proj.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
+                            <li key={proj.id} className="relative group/list flex flex-col basis-1/2 transition duration-500 hover:bg-huh/30">
                                 {/* Invisible checkbox */}
                                 <input 
                                     className="absolute peer w-full h-6 z-10 opacity-0 cursor-pointer" 
                                     type="checkbox"
                                 />
-                                <section className="text-base flex flex-row pl-8 justify-between gap-32">
+                                <section className="text-base pl-8 justify-between gap-32">
                                     <h2 className="text-white/30 group-hover/bgg:text-white/65 group-hover/list:text-mainC/100 group-hover/bgg:group-hover/list:text-mainC/100 transition duration-500 font-semibold">{proj.title}</h2>
                                 </section>
                                 {/* Arrow Icon */} 
@@ -41,7 +41,6 @@ export default function  () {
                                             clipRule="evenodd" />
                                     </svg>
                                 </section>
-                                
                             </li>
                         ))}
                     </ul>

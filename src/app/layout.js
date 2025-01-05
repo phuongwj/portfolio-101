@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className="bg-main">
         <main className="flex min-h-screen px-32 gap-24">
           <Header/>
-          <section className="flex flex-col py-12 gap-10">
+          <section className="flex flex-col py-12 gap-10 max-w-[690px]">
             <Experiences/>
             <Projects/>
           </section>
