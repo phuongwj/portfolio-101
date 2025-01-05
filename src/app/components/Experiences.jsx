@@ -21,8 +21,8 @@ export default function Experiences() {
                     <p className="font-bold text-xl text-white/45 transition duration-500 group-hover/bgg:text-white/80"> Experiences </p>
                 </section>  
                 <section className="h-30 px-4 overflow-y-scroll">
-                    <ul className="max-h-full flex flex-col gap-4">
-                        {exps.reverse().map( (exp) => (
+                    <ul className="max-h-full flex flex-col-reverse gap-4">
+                        {exps.map( (exp) => (
                             <li key={exp.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
                                 {/* Invisible checkbox */}
                                 <input 
