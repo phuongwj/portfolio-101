@@ -11,7 +11,7 @@ export default function Experiences() {
                 className="absolute h-full w-full rounded-3xl blur bg-gradient-to-b from-white opacity-25 group-hover/bgg:opacity-70 transition duration-700"
             >
             </section>
-            <main className="relative flex flex-col gap-3 p-7 rounded-3xl shadow-xl bg-secondary border transition duration-700 group-hover/bgg:border-secondaryC border-secondaryC/40">
+            <main className="relative flex flex-col gap-3 px-7 pt-7 pb-3 rounded-3xl shadow-xl bg-secondary border transition duration-700 group-hover/bgg:border-secondaryC border-secondaryC/40">
                 <section className="flex flex-row gap-2 pb-1">
                     <section className="pt-1">
                         {/* Cloud Icon */}
