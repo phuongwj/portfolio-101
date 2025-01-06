@@ -11,6 +11,7 @@ export default {
         main: "#1E1E1E",
         secondary: '#191919',
         huh: '#404040',
+        huh2: '#262626',
         mainC: '#467CCC',
         secondaryC: '#4D4D4D',
         wless: '#838383',
