@@ -26,16 +26,11 @@ export default function  () {
                 <section className="h-48 px-4 overflow-y-scroll">
                     <ul className="grid grid-cols-2 gap-x-3 gap-y-4">
                         {projsSorted.map((proj) => (
-                            <li key={proj.id} className="group/list flex flex-row basis-1/2 justify-between transition duration-500 py-5 bg-huh/10 group-hover/bgg:bg-huh/25 group-hover/bgg:hover:bg-main rounded-2xl">
-                                <section className="text-sm pl-3 justify-between gap-32">
-                                    <div className="text-white/30 group-hover/bgg:text-white/65 group-hover/list:text-mainC/100 group-hover/bgg:group-hover/list:text-mainC/100 transition duration-500 font-semibold">
-                                        <h2 className={`transition-opacity duration-300 ${hovered === proj.id ? 'opacity-0' : 'opacity-100'}`}>
-                                            {proj.title}
-                                        </h2>
-                                        <h2 className={`transition-opacity duration-300 ${hovered === proj.id ? 'opacity-100' : 'opacity-0'}`}>
-                                            {proj.info}
-                                        </h2>
-                                    </div>
+                            <li key={proj.id} className="group/list h-40 transition duration-500 bg-huh/10 group-hover/bgg:bg-huh/25 group-hover/bgg:hover:bg-main rounded-2xl">
+                                <section className="text-sm pl-3">
+                                    <h2 className="text-white/30 group-hover/bgg:text-white/65 group-hover/list:text-mainC/100 group-hover/bgg:group-hover/list:text-mainC/100 transition duration-500 font-semibold">
+                                        {hovered === proj.id ? proj.info : proj.title}
+                                    </h2>
                                 </section>
                                 {/* Question Mark Icon */} 
                                 <section className="pt-0.5 pr-2"
