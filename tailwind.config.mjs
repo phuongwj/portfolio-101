@@ -7,6 +7,7 @@ export default {
   ],
   theme: {
     extend: {
+      // Consider #114, very good
       colors: {
         main: "#1E1E1E",
         secondary: '#191919',

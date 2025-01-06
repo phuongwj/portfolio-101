@@ -44,8 +44,8 @@ export default function Experiences() {
                                 </section>
                                 {/* Content */}
                                 <section className="overflow-hidden pl-8 transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                                    <h3 className="text-base text-white/45">{exp.org}</h3>
-                                    <h4 className="text-base text-white/45">{exp.location}</h4>
+                                    <h3 className="text-base text-white/20 group-hover/bgg:text-white/45 transition duration-500">{exp.org}</h3>
+                                    <h4 className="text-base text-white/20 group-hover/bgg:text-white/45 transition duration-500">{exp.location}</h4>
                                 </section>
                             </li>
                         ))}
