@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/css/globals.css";
 import Header from "@/app/components/Header";
 import Experiences from "@/app/components/Experiences";
-import Projects from "@/app/components/Projects";
+// import Projects from "@/app/components/Projects";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <Header/>
           <section className="flex flex-col py-12 gap-10 max-w-[690px]">
             <Experiences/>
-            <Projects/>
+            {/* <Projects/> */}
           </section>
         </main>
         {children}
