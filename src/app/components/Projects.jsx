@@ -26,18 +26,26 @@ export default function  () {
                 <section className="h-48 px-4 overflow-y-scroll">
                     <ul className="grid grid-cols-2 gap-x-3 gap-y-4">
                         {projsSorted.map((proj) => (
-                            <li key={proj.id} className="group/list h-40 transition duration-500 bg-huh/10 group-hover/bgg:bg-huh/25 group-hover/bgg:hover:bg-main rounded-2xl">
-                                <section className="text-sm pl-3">
-                                    <h2 className="text-white/30 group-hover/bgg:text-white/65 group-hover/list:text-mainC/100 group-hover/bgg:group-hover/list:text-mainC/100 transition duration-500 font-semibold">
-                                        {hovered === proj.id ? proj.info : proj.title}
-                                    </h2>
+                            <li key={proj.id} className="relative group/list h-20 transition duration-500 bg-huh/10 group-hover/bgg:bg-huh/25 group-hover/bgg:hover:bg-main rounded-2xl">
+                                {/* Content */}
+                                <section className="relative text-base pl-3">
+                                    <section className=" transition duration-500 font-semibold">
+                                        <h2 className={`absolute pt-1 pr-4 text-left text-white/30 group-hover/bgg:text-white/65 group-hover/bgg:group-hover/list:text-mainC/100 transition duration-500 
+                                            ${hovered === proj.id ? 'opacity-0' : 'opacity-100'}`}>
+                                            {proj.title}
+                                        </h2>
+                                        <h2 className={`absolute pt-1 pr-4 text-left text-white/65 transition-opacity duration-500 
+                                            ${hovered === proj.id ? 'opacity-100' : 'opacity-0'}`}>
+                                            {proj.info}
+                                        </h2>
+                                    </section>
                                 </section>
                                 {/* Question Mark Icon */} 
-                                <section className="pt-0.5 pr-2"
+                                <section className="absolute top-2 right-2 "
                                     onMouseEnter={() => setHovered(proj.id)}
                                     onMouseLeave={() => setHovered(null)}
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="size-4 fill-white/30 group-hover/bgg:fill-white/65 group-hover/bgg:group-hover/list:fill-mainC/100 transition duration-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="size-4 fill-white/30 group-hover/bgg:fill-white/65 group-hover/bgg:group-hover/list:fill-mainC/100 group-hover/bgg:group-hover/list:hover:fill-white/65 transition duration-500">
                                         <path d="M80 160c0-35.3 28.7-64 64-64l32 0c35.3 0 64 28.7 64 64l0 3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74l0 1.4c0 17.7 14.3 32 32 32s32-14.3 32-32l0-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7l0-3.6c0-70.7-57.3-128-128-128l-32 0C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
                                     </svg>
                                 </section>
@@ -49,3 +57,10 @@ export default function  () {
         </section>
     )
 }
+
+{/* <h2 className={`text-white/30 group-hover/bgg:text-white/65 group-hover/list:text-mainC/100 group-hover/bgg:group-hover/list:text-mainC/100 transition duration-500 font-semibold
+                                    ${hovered === proj.id ? 'opacity-100 translate-y-0' : ''}`}>
+                                        {hovered === proj.id ? proj.info : proj.title}
+                                    </h2> */}
+
+                                    // pt-0.5 pr-2
