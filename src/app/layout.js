@@ -3,6 +3,7 @@ import "@/css/globals.css";
 import Header from "@/app/components/Header";
 import Experiences from "@/app/components/Experiences";
 import Projects from "@/app/components/Projects";
+import Toolbox from "@/app/components/Toolbox";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <section className="flex flex-col py-12 gap-8 max-w-[690px]">
             <Experiences/>
             <Projects/>
+            <Toolbox/>
           </section>
         </main>
         {children}
