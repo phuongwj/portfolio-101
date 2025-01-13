@@ -22,9 +22,9 @@ export default function Toolbox() {
                     <p className="font-bold text-xl text-white/45 transition duration-500 group-hover/bgg:text-white/80"> My toolbox </p>
                 </section>  
                 <section className="h-7">
-                    <Marquee>
+                    <Marquee pauseOnHover>
                         {tools.map( (tool) => (
-                            <li key={tool} className="bg-huh/10 group-hover/bgg:bg-huh/25 m-1 rounedd-xl flex space-x-5 p-4
+                            <li key={tool} className="bg-huh/10 group-hover/bgg:bg-huh/25 rounded-xl flex px-2
                             font-bold text-base cursor-pointer text-white/30 group-hover/bgg:text-white/65">
                                 {tool}
                             </li>
