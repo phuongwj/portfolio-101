@@ -20,6 +20,7 @@ export const metadata = {
   description: "personal portfolio :)",
 };
 
+// Made some huge changes for winter branch. It will replace main branch soon.
 export default function RootLayout({ children }) {
   return (
     <html lang="en"> 
