@@ -1,5 +1,6 @@
 import React from 'react';
 import exps from "@/local-json/experiences";
+import Link from 'next/link';
 
 export default function Experiences() {
 
@@ -45,7 +46,7 @@ export default function Experiences() {
                                 {/* Content */}
                                 <section className="overflow-hidden pl-8 transition-all duration-500 max-h-0 peer-checked:max-h-40">
                                     <h3 className="text-base text-white/20 group-hover/bgg:text-white/45 transition duration-500 mb-0.5">{exp.org} | {exp.location}</h3>
-                                    <h4 className="text-base text-white/20 group-hover/bgg:text-white/45 transition duration-500">{exp.info}</h4>
+                                    <h4 className="text-base text-white/20 group-hover/bgg:text-white/45 transition duration-500">{exp.info} Check out the website <span> {exp.id === 2 ? <Link href="https://hci4good.cs.dal.ca/" className="font-semibold underline" target="_blank">here</Link> : ""} </span> </h4>
                                 </section>
                             </li>
                         ))}
