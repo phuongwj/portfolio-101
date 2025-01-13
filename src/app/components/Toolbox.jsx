@@ -9,7 +9,7 @@ export default function Toolbox() {
                 className="absolute h-full w-full rounded-3xl blur bg-gradient-to-b from-white opacity-25 group-hover/bgg:opacity-70 transition duration-700"
             >
             </section>
-            <main className="relative flex flex-col gap-3 px-7 pt-7 pb-3 rounded-3xl shadow-xl bg-secondary border transition duration-700 group-hover/bgg:border-secondaryC border-secondaryC/40">
+            <main className="relative flex flex-col gap-4 px-7 pt-7 pb-5 rounded-3xl shadow-xl bg-secondary border transition duration-700 group-hover/bgg:border-secondaryC border-secondaryC/40">
                 <section className="flex flex-row gap-2 pb-1">
                     <section className="pt-1">
                         {/* Wrench-Screwdriver Icon */}
@@ -22,10 +22,10 @@ export default function Toolbox() {
                     <p className="font-bold text-xl text-white/45 transition duration-500 group-hover/bgg:text-white/80"> My toolbox </p>
                 </section>  
                 <section className="h-7">
-                    <Marquee pauseOnHover>
+                    <Marquee pauseOnHover speed={35} gradient gradientWidth={110} gradientColor='#191919'>
                         {tools.map( (tool) => (
-                            <li key={tool} className="bg-huh/10 group-hover/bgg:bg-huh/25 rounded-xl flex px-2
-                            font-bold text-base cursor-pointer text-white/30 group-hover/bgg:text-white/65">
+                            <li key={tool} className="bg-huh/10 group-hover/bgg:bg-huh/25 rounded-xl flex px-2 mx-1
+                            font-semibold text-base cursor-pointer text-white/30 group-hover/bgg:text-white/65 transition duration-500">
                                 {tool}
                             </li>
                         ))}
