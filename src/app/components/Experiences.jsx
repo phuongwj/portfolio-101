@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import exps from "@/local-json/experiences";
 import Link from 'next/link';
