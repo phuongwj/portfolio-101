@@ -8,19 +8,12 @@ export default function Experiences() {
     const expsSorted = exps.sort((a, b) => b.id - a.id);
 
     return (
-        <section className="h-screen">
-            <section className="flex flex-col justify-center items-center h-5/6">
-                <section className="flex flex-row gap-2">
-                    <p className="font-bold text-4xl transition duration-500 text-white/80"> my experiences </p>
-                    <section className="pt-0.5">
-                        {/* Cloud Icon */}
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-9 transition duration-500 fill-mainC">
-                            <path fillRule="evenodd" 
-                            d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
-                        </svg>
-                    </section>
-                </section> 
-                <main className="group/bgg flex flex-col h-40 w-40 py-5"> 
+        <section className="h-screen w-fit py-12 mx-auto">
+            <header className="flex flex-col w-fit space-y-5">
+                <p className="font-bold text-4xl transition duration-500 text-white/80"> My experiences </p>
+            </header> 
+            <section className="h-fit w-40">
+                <main className="group/bgg flex flex-col py-5"> 
                     <section className="h-56 flex justify-center pt-2">
                         <ul className="max-h-full flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
                             {expsSorted.map((exp) => (
@@ -57,3 +50,10 @@ export default function Experiences() {
 }
 
 // bg-secondary border transition duration-700 group-hover/bgg:border-secondaryC border-secondaryC/40
+
+{/* <section className="pt-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-9 transition duration-500 fill-mainC">
+                            <path fillRule="evenodd" 
+                            d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
+                        </svg>
+                    </section> */}
