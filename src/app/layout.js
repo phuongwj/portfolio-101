@@ -38,6 +38,8 @@ export default function RootLayout({ children }) {
     </html>
   );
 
+  // This is so cool
+
   /*
   Add <div> inside <body>
   Add <Header/> inside <div>
