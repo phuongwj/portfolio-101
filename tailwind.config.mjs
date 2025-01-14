@@ -24,6 +24,9 @@ export default withMT({
         '18': '4.6rem',
         '30': '7.5rem',
       },
+      width: {
+        '40': '40%',
+      },
       borderWidth: {
         '1': '1px',
       }

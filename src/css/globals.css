@@ -18,9 +18,9 @@
 }
 
 /* Track On Hover */
-:hover::-webkit-scrollbar-track {
+/* :hover::-webkit-scrollbar-track {
     background-color: #191919;
-}
+} */
 
 /* Thumb On Hover */
 :hover::-webkit-scrollbar-thumb {

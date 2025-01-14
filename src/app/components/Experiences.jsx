@@ -9,20 +9,20 @@ export default function Experiences() {
 
     return (
         <section className="h-screen">
-            <section className="flex flex-row gap-2 m-4">
-                <section className="pt-1">
-                    {/* Cloud Icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-6 transition duration-500 fill-mainC">
-                        <path fillRule="evenodd" 
-                        d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
-                    </svg>
-                </section>
-                <p className="font-bold text-xl transition duration-500 text-white/80"> Experiences </p>
-            </section> 
-            <section className="flex justify-center items-center h-5/6">        
-                <main className="group/bgg flex flex-col h-40 gap-3 w-1/2 px-7 pt-7 pb-3 border"> 
-                    <section className="h-32 w-fit flex justify-center overflow-y-scroll">
-                        <ul className="max-h-full flex flex-col w-5/6 gap-4">
+            <section className="flex flex-col justify-center items-center h-5/6">
+                <section className="flex flex-row gap-2">
+                    <p className="font-bold text-4xl transition duration-500 text-white/80"> my experiences </p>
+                    <section className="pt-0.5">
+                        {/* Cloud Icon */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-9 transition duration-500 fill-mainC">
+                            <path fillRule="evenodd" 
+                            d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
+                        </svg>
+                    </section>
+                </section> 
+                <main className="group/bgg flex flex-col h-40 w-40 py-5"> 
+                    <section className="h-56 flex justify-center pt-2">
+                        <ul className="max-h-full flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
                             {expsSorted.map((exp) => (
                                 <li key={exp.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
                                     {/* Invisible checkbox */}
