@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,6 +24,9 @@ export default {
         '18': '4.6rem',
         '30': '7.5rem',
       },
+      width: {
+        '40': '40%',
+      },
       borderWidth: {
         '1': '1px',
       }
@@ -31,30 +36,4 @@ export default {
     fill: ['hover', 'focus'], // this line does the trick
   },
   plugins: [],
-};
-
-/*
-function ({addUtilities}) {
-      const newUtilities = {
-        ".scrollbar-thin": {
-          scrollbarWidth : "thin",
-          scrollbarColor: "rgb(31 29 29) white"
-        },
-        ".scrollbar-webkit": {
-          "&::-webkit-scrollbar": {
-            width: "8px"
-          },
-          "&::-webkit-scrollbar-track": {
-            background: "white"
-          },
-          "&::-webkit-scrollbar-thumb": {
-            backgroundColor: "rgb(31 41 55)",
-            borderRadius: "20px",
-            border: "1px solid white"
-          }
-        }
-      }
-
-      addUtilities(newUtilities, ["responsive", "hover"])
-    }
-*/
+});

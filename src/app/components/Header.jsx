@@ -7,7 +7,7 @@ export default function Header() {
     const [isHover, setHover] = useState(false);
 
     return (
-        <main className="w-fit text-white py-28">
+        <main className="w-fit h-screen flex flex-col items-center justify-center text-white">
             <section className="flex flex-wrap font-bold text-5xl">
                 <h1 className="opacity-80">
                     Hi, I'm 
