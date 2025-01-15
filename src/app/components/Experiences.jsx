@@ -8,12 +8,12 @@ export default function Experiences() {
     const expsSorted = exps.sort((a, b) => b.id - a.id);
 
     return (
-        <section className="h-screen max-w-3xl py-12 mx-auto flex flex-col items-center">
+        <section className="h-screen w-42 py-12 mx-auto flex flex-col items-center">
             <header className="flex flex-col self-start space-y-5">
-                <p className="font-bold text-4xl transition duration-500 text-white/80"> My experiences </p>
+                <h1 className="font-bold text-5xl transition duration-500 text-white/80"> My experiences </h1>
             </header> 
-            <main className="h-28 group/bgg flex flex-col"> 
-                <section className="h-56 flex justify-center">
+            <main className="h-28 w-100 group/bgg flex flex-col"> 
+                <section className="h-48 flex justify-center">
                     <ul className="flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
                         {expsSorted.map((exp) => (
                             <li key={exp.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
