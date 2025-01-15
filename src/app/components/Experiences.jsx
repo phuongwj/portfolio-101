@@ -8,19 +8,23 @@ export default function Experiences() {
     const expsSorted = exps.sort((a, b) => b.id - a.id);
 
     return (
-        <section className="h-screen w-42 py-12 mx-auto flex flex-col items-center">
-            <header className="flex flex-col self-start space-y-5">
+        <section className="h-screen w-42 py-12 mx-auto flex flex-col gap-4 items-center">
+            <header className="flex flex-row gap-2 self-start">
                 <h1 className="font-bold text-5xl transition duration-500 text-white/80"> My experiences </h1>
-            </header> 
-            <section className="w-full inline-flex items-center gap-5.5 pl-8">
-                <hr className="border-2 border-gray-800 rounded-full grow"/>
-                <section className="pt-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-9 transition duration-500 fill-mainC">
+                <section className="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-12 fill-mainC">
                         <path fillRule="evenodd" 
                         d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
                     </svg>
                 </section>
+            </header> 
+            <section className="w-full pr-14 items-center gap-5.5">
+                <hr className="border-2 border-gray-800 rounded-full grow"/>
             </section>
+            <p className="text-justify pr-14 text-white/20 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud 
+            </p>
             <main className="h-28 w-100 group/bgg flex flex-col"> 
                 <section className="h-52 flex justify-center">
                     <ul className="flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
