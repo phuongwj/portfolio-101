@@ -12,8 +12,17 @@ export default function Experiences() {
             <header className="flex flex-col self-start space-y-5">
                 <h1 className="font-bold text-5xl transition duration-500 text-white/80"> My experiences </h1>
             </header> 
+            <section className="w-full inline-flex items-center gap-5.5 pl-8">
+                <hr className="border-2 border-gray-800 rounded-full grow"/>
+                <section className="pt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-9 transition duration-500 fill-mainC">
+                        <path fillRule="evenodd" 
+                        d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
+                    </svg>
+                </section>
+            </section>
             <main className="h-28 w-100 group/bgg flex flex-col"> 
-                <section className="h-48 flex justify-center">
+                <section className="h-52 flex justify-center">
                     <ul className="flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
                         {expsSorted.map((exp) => (
                             <li key={exp.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
@@ -49,9 +58,4 @@ export default function Experiences() {
 
 // bg-secondary border transition duration-700 group-hover/bgg:border-secondaryC border-secondaryC/40
 
-{/* <section className="pt-0.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-9 transition duration-500 fill-mainC">
-                            <path fillRule="evenodd" 
-                            d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clipRule="evenodd" />
-                        </svg>
-                    </section> */}
+
