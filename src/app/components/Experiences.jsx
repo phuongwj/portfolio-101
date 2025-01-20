@@ -8,7 +8,7 @@ export default function Experiences() {
     const expsSorted = exps.sort((a, b) => b.id - a.id);
 
     return (
-        <section className="h-screen w-42 py-12 mx-auto flex flex-col gap-4 items-center">
+        <section className="h-screen w-40 py-12 mx-auto flex flex-col gap-4 items-center">
             <header className="flex flex-row gap-2 self-start">
                 <h1 className="font-bold text-5xl transition duration-500 text-white/80"> My experiences </h1>
                 <section className="">
@@ -18,14 +18,14 @@ export default function Experiences() {
                     </svg>
                 </section>
             </header> 
-            <section className="w-full pr-14 items-center gap-5.5">
+            <section className="w-full items-center gap-5.5">
                 <hr className="border-2 border-gray-800 rounded-full grow"/>
             </section>
-            <p className="text-justify pr-14 text-white/20 mb-4">
+            <p className="text-justify text-white/20 mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud 
             </p>
-            <main className="h-28 w-100 group/bgg flex flex-col"> 
+            <main className="h-28 group/bgg flex flex-col"> 
                 <section className="h-52 flex justify-center">
                     <ul className="flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
                         {expsSorted.map((exp) => (
