@@ -26,8 +26,8 @@ export default function Experiences() {
                 Ut enim ad minim veniam, quis nostrud 
             </p>
             <main className="h-28 group/bgg flex flex-col"> 
-                <section className="h-52 flex justify-center">
-                    <ul className="flex flex-col w-fit gap-4 pr-1 overflow-y-scroll">
+                <section className="h-auto flex justify-center">
+                    <ul className="flex flex-col w-fit gap-4 pr-1">
                         {expsSorted.map((exp) => (
                             <li key={exp.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
                                 {/* Invisible checkbox */}
