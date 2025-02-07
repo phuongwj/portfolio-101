@@ -10,14 +10,14 @@ export default function Header() {
         <main className="w-fit h-screen flex flex-col items-center justify-center text-white">
             <section className="flex flex-wrap font-bold text-5xl">
                 <h1 className="opacity-80">
-                    Hi, I'm 
+                    nice to meet you, i'm
                 </h1>
                 <h1 className={
                     (isHover 
                         ? "ml-3 text-white opacity-80 transition duration-500" 
                         : "ml-3 text-mainC opacity-100 transition duration-500")}
                 >
-                    Phuong
+                    phuong
                 </h1>
             </section>
             <section className="flex flex-wrap font-bold text-xl mt-2">
