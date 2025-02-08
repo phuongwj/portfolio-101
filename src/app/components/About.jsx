@@ -7,7 +7,7 @@ export default function About() {
         <h1 className="font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4">
             about 
         </h1>
-        <p className="w-3/5 text-white/40 text-lg text-justify">
+        <p className="w-2/3 text-white/40 text-lg text-justify">
             born and raised in <span className="text-white/75">Saigon, Vietnam</span>, i was given a computer by my sister at an <span className="text-white/75">early age</span>. with it, i spent countless hours
             playing video games, watching and creating my own YouTube videos. that small exposure to tech sparked my interest, and as 
             i navigated the early stages of my life, my curiosity for tech continued to grow. eventually, i had to step out of my 

@@ -18,7 +18,7 @@ export default function Experiences() {
             <div className="flex flex-col">
                 <h1 className="font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4"> experience </h1>
             </div>
-            <main className="w-3/5 flex flex-col"> 
+            <main className="w-2/3 flex flex-col"> 
                 <section className="h-auto flex justify-center">
                     <ul className="flex flex-col gap-4">
                         {expsSorted.map((exp) => (
