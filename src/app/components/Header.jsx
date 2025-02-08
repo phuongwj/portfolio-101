@@ -32,7 +32,7 @@ export default function Header() {
                         </span>
                 </h1>
             </section>
-            <p className="text-white/50">
+            <p className="mt-4 text-white/50 text-lg">
                 an aspiring & dedicated developer
             </p>
             <footer className="w-fit flex flex-wrap gap-2 mt-3">
