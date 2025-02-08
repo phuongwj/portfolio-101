@@ -12,11 +12,9 @@ export default function page() {
     <main className="flex flex-col items-center">
           <Header/>
           <About/>
-          <section>
-              {/* <Experiences/> */}
-              {/* <Projects/>
-              <Toolbox/> */}
-          </section>
+          <Experiences/>
+          {/* <Projects/>
+          <Toolbox/> */}
     </main>
   )
 }
