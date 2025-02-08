@@ -10,8 +10,10 @@ export default withMT({
   theme: {
     extend: {
       // Consider #114, very good
+      // old main: 1E1E1E
+      // new main?: 1B1D1F
       colors: {
-        main: "#1E1E1E",
+        main: "#1B1D1F",
         secondary: '#191919',
         huh: '#404040',
         huh2: '#262626',

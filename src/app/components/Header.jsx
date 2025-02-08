@@ -7,37 +7,35 @@ export default function Header() {
     const [isHover, setHover] = useState(false);
 
     return (
-        <main className="w-fit h-screen flex flex-col items-center justify-center text-white">
-            <section className="flex flex-wrap font-bold text-5xl">
-                <h1 className="opacity-80">
-                    nice to meet you, i'm
+        <main className="w-5/6 h-screen flex flex-col gap-y-2 justify-center text-white">
+            <section className="flex flex-col font-bold text-5xl">
+                <h1>
+                    nice to meet you,
                 </h1>
-                <h1 className={
-                    (isHover 
-                        ? "ml-3 text-white opacity-80 transition duration-500" 
-                        : "ml-3 text-mainC opacity-100 transition duration-500")}
-                >
-                    phuong
+                <h1 className="flex gap-x-3">
+                    i'm 
+                        <span className={(isHover 
+                                    ? "text-white transition duration-500" 
+                                    : "text-mainC transition duration-500")}> 
+                                    phuong
+                        </span>
+                        <span>
+                            - aka
+                        </span>
+                        <span className={
+                        (isHover 
+                            ? "ml-1.5 text-mainC cursor-help opacity-100 transition duration-500" 
+                            : "ml-1.5 cursor-help transition duration-500")}
+                            onMouseEnter={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)} > 
+                            julia 
+                        </span>
                 </h1>
             </section>
-            <section className="flex flex-wrap font-bold text-xl mt-2">
-                <h2 className="opacity-45">
-                    also known as 
-                </h2>
-                <h2 className={
-                    (isHover 
-                        ? "ml-1.5 text-mainC cursor-help opacity-100 transition duration-500" 
-                        : "ml-1.5 opacity-80 cursor-help transition duration-500")}
-                    onMouseEnter={() => setHover(true)}
-                    onMouseLeave={() => setHover(false)}        
-                >
-                    Julia
-                </h2>
-            </section>
-            <p className="text-white/30 mt-1">
-                An aspiring & dedicated developer
+            <p className="text-white/50">
+                an aspiring & dedicated developer
             </p>
-            <footer className="w-fit flex flex-wrap gap-2 mt-4">
+            <footer className="w-fit flex flex-wrap gap-2 mt-3">
                 <Link href='https://github.com/phuongwj' target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
                         className="h-6.5 w-6.5 fill-secondaryC hover:fill-white hover:opacity-45 transition duration-500">
