@@ -42,7 +42,7 @@ export default function Experiences() {
                                     </svg>
                                 </section>
                                 {/* Content */}
-                                <section className={`overflow-hidden pl-8 transition-all duration-500 ${expandedId === exp.id ? 'max-h-20' : 'max-h-0'}`}>
+                                <section className={`overflow-hidden pl-8 transition-all duration-500 ${expandedId === exp.id ? 'max-h-32' : 'max-h-0'}`}>
                                     <h3 className="text-white/45 transition duration-500 mb-0.5">- {exp.location}</h3>
                                     <h4 className="text-white/45 transition duration-500">{exp.info} {exp.id === 2 ? <span> Check out the website </span>: ""} <span> {exp.id === 2 ? <Link href="https://hci4good.cs.dal.ca/" className="font-semibold underline" target="_blank"> here</Link> : ""} </span> </h4>
                                 </section>
