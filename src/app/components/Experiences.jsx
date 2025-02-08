@@ -30,7 +30,7 @@ export default function Experiences() {
                                     checked={expandedId === exp.id}
                                     onChange={() => handleClick(exp.id)}
                                 />
-                                <section className="text-base flex flex-row justify-between pl-8">
+                                <section className="text-lg flex flex-row justify-between pl-8">
                                     <h2 className="text-white/65 group-hover/list:text-mainC/100 transition duration-500 font-semibold">{exp.title} {exp.org} </h2>
                                     <p className="text-white/30 group-hover/list:text-white/50 transition duration-500 font-medium">{exp.time}</p>
                                 </section>
@@ -42,9 +42,9 @@ export default function Experiences() {
                                     </svg>
                                 </section>
                                 {/* Content */}
-                                <section className={`overflow-hidden pl-8 transition-all duration-500 ${expandedId === exp.id ? 'max-h-40' : 'max-h-0'}`}>
-                                    <h3 className="text-base text-white/45 transition duration-500 mb-0.5">- {exp.location}</h3>
-                                    <h4 className="text-base text-white/45 transition duration-500">{exp.info} {exp.id === 2 ? <span> Check out the website </span>: ""} <span> {exp.id === 2 ? <Link href="https://hci4good.cs.dal.ca/" className="font-semibold underline" target="_blank"> here</Link> : ""} </span> </h4>
+                                <section className={`overflow-hidden pl-8 transition-all duration-500 ${expandedId === exp.id ? 'max-h-20' : 'max-h-0'}`}>
+                                    <h3 className="text-white/45 transition duration-500 mb-0.5">- {exp.location}</h3>
+                                    <h4 className="text-white/45 transition duration-500">{exp.info} {exp.id === 2 ? <span> Check out the website </span>: ""} <span> {exp.id === 2 ? <Link href="https://hci4good.cs.dal.ca/" className="font-semibold underline" target="_blank"> here</Link> : ""} </span> </h4>
                                 </section>
                             </li>
                         ))}
