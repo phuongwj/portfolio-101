@@ -6,34 +6,34 @@ import Experiences from "@/app/components/Experiences";
 import Projects from "@/app/components/Projects";
 import Toolbox from "@/app/components/Toolbox";
 import About from "@/app/components/About";
-import fetchTrack from "@/app/fetchTrack";
+// import fetchTrack from "@/app/fetchTrack";
 
 export default function page() {
 
-  const [currentTrack, setCurrentTrack] = useState(null);
+  // const [currentTrack, setCurrentTrack] = useState(null);
 
-  useEffect(() => {
-    let isMounted = true;
+  // useEffect(() => {
+  //   let isMounted = true;
 
-    async function getTrack () {
-      const trackData = await fetchTrack();
-      if (isMounted) {
-        setCurrentTrack(trackData);
-      }
-    };
+  //   async function getTrack () {
+  //     const trackData = await fetchTrack();
+  //     if (isMounted) {
+  //       setCurrentTrack(trackData);
+  //     }
+  //   };
 
-    getTrack();
+  //   getTrack();
 
-    setTimeout(getTrack, 10000);
-  }, []);
+  //   setTimeout(getTrack, 10000);
+  // }, []);
 
   return (
     <main className="flex flex-col items-center">
-          <Header currentTrack={currentTrack}/>
+          <Header/>
           <About/>
+          {/* <Toolbox/> */}
           <Experiences/>
-          {/* <Projects/>
-          <Toolbox/> */}
+          {/* <Projects/>*/}
     </main>
   )
 }

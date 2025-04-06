@@ -9,7 +9,7 @@
 
 /* Track Not On Hover */
 ::-webkit-scrollbar-track {
-    background-color: none;
+    background-color: #191919;
 }
 
 /* Thumb Not On Hover */

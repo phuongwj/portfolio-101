@@ -14,12 +14,10 @@ export default function Experiences() {
     }
 
     return (
-        <div className="w-5/6 h-screen flex flex-row justify-between py-52 text-white">
-            <div className="flex flex-col">
-                <h1 className="font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4"> experience </h1>
-            </div>
-            <main className="w-2/3 flex flex-col"> 
-                <section className="h-auto flex justify-center">
+        <main className="bg-secondary h-screen w-full flex flex-col px-44 gap-20 text-white">
+            <h1 className="pt-32 font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4"> experience </h1>
+            <main className="flex flex-col w-4/5"> 
+                <section className="h-auto flex">
                     <ul className="flex flex-col gap-4">
                         {expsSorted.map((exp) => (
                             <li key={exp.id} className="relative group/list flex flex-col transition duration-500 hover:bg-huh/30">
@@ -51,7 +49,7 @@ export default function Experiences() {
                     </ul>
                 </section>
             </main>
-        </div>
+        </main>
     )
 }
 

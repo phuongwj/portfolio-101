@@ -3,13 +3,12 @@ import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 
-export default function Header({ currentTrack }) {
+export default function Header() {
     const [isHover, setHover] = useState(false);
 
     return (
-        <main className="w-5/6 h-screen flex flex-row gap-x-52">
-            <main className="flex flex-col gap-y-2 justify-center text-white">
-                <section className="flex flex-col font-bold text-5xl">
+            <main className="flex flex-col h-screen w-full gap-y-2 bg-main items-center justify-center  text-white">
+                <section className="flex flex-col font-bold text-5xl text-center">
                     <h1>
                         nice to meet you,
                     </h1>
@@ -51,33 +50,5 @@ export default function Header({ currentTrack }) {
                     </Link>
                 </footer>
             </main>
-            <aside className="my-64 py-4 pl-4 pr-80 h-28 bg-black/30 rounded-2xl flex flex-col">
-                {currentTrack ? (
-                    <section>
-                        <section className="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                className="h-5 w-5 fill-white">
-                                <path fillRule="evenodd" d="M19.952 1.651a.75.75 0 0 1 .298.599V16.303a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.403-4.909l2.311-.66a1.5 1.5 0 0 0 1.088-1.442V6.994l-9 2.572v9.737a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.402-4.909l2.31-.66a1.5 1.5 0 0 0 1.088-1.442V5.25a.75.75 0 0 1 .544-.721l10.5-3a.75.75 0 0 1 .658.122Z" clipRule="evenodd" />
-                            </svg>
-                            <h2 className="text-white text-lg font-semibold">Now Playing</h2>
-                        </section>
-                        <p className="text-white/50 mt-2"><strong className="text-white/80">Track:</strong> {currentTrack.name}</p>
-                        <p className="text-white/50"><strong className="text-white/80">Artist:</strong> {currentTrack.artist}</p>
-                    </section>
-                ) : (
-                    <section>
-                        <section className="flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                className="h-5 w-5 fill-white">
-                                <path fillRule="evenodd" d="M19.952 1.651a.75.75 0 0 1 .298.599V16.303a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.403-4.909l2.311-.66a1.5 1.5 0 0 0 1.088-1.442V6.994l-9 2.572v9.737a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.402-4.909l2.31-.66a1.5 1.5 0 0 0 1.088-1.442V5.25a.75.75 0 0 1 .544-.721l10.5-3a.75.75 0 0 1 .658.122Z" clipRule="evenodd" />
-                            </svg>
-                            <h2 className="text-white text-lg font-semibold">Now Playing</h2>
-                        </section>
-                        <p className="text-white/50 mt-2"><strong className="text-white/80">Track:</strong> nothing here</p>
-                        <p className="text-white/50"><strong className="text-white/80">Artist:</strong> nothing here</p>
-                    </section>
-                )}
-            </aside>
-        </main>
     )
 }
