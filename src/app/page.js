@@ -31,7 +31,7 @@ export default function page() {
     <main className="flex flex-col items-center">
           <Header/>
           <About/>
-          {/* <Toolbox/> */}
+          <Toolbox/>
           <Experiences/>
           {/* <Projects/>*/}
     </main>
