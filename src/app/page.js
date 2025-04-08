@@ -9,29 +9,11 @@ import About from "@/app/components/About";
 // import fetchTrack from "@/app/fetchTrack";
 
 export default function page() {
-
-  // const [currentTrack, setCurrentTrack] = useState(null);
-
-  // useEffect(() => {
-  //   let isMounted = true;
-
-  //   async function getTrack () {
-  //     const trackData = await fetchTrack();
-  //     if (isMounted) {
-  //       setCurrentTrack(trackData);
-  //     }
-  //   };
-
-  //   getTrack();
-
-  //   setTimeout(getTrack, 10000);
-  // }, []);
-
   return (
     <main className="flex flex-col items-center">
           <Header/>
           <About/>
-          {/* <Toolbox/> */}
+          <Toolbox/>
           <Experiences/>
           {/* <Projects/>*/}
     </main>
