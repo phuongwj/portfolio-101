@@ -12,7 +12,7 @@ export default function Toolbox() {
         <section className="bg-main w-full flex flex-col gap-10"> 
             <section className="flex justify-center">
                 <h1 className="px-56 pt-14 font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4 text-white">
-                    toolbox 
+                    toolbox (pls ignore my toolbox for now, i will fix i promise, im too busy)
                 </h1>
             </section>
             <section className="h-7">
