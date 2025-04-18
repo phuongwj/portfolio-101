@@ -9,21 +9,22 @@ import { tools } from "@/app/components/Tools";
 
 export default function Toolbox() {
     return (
-        <section className="bg-main w-full flex flex-col gap-10"> 
+        <section className="bg-secondary w-full flex flex-col gap-5"> 
             <section className="flex justify-center">
-                <h1 className="px-56 pt-14 font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4 text-white">
-                    toolbox (pls ignore my toolbox for now, i will fix i promise, im too busy)
+                <h1 className="px-56 text-lg text-white/40">
+                    the <span className="font-bold text-white/75 underline underline-offset-4 decoration-mainC"> toolbox </span>i've been working with
                 </h1>
             </section>
-            <section className="h-7">
-                <Marquee pauseOnHover speed={35} gradient gradientWidth={110} gradientColor='#191919'>
+            <section className="h-fit py-5">
+                <Marquee pauseOnHover speed={35} gradient gradientWidth={235} gradientColor='#191919'>
                     {Object.entries(tools).map(([name, svgProps] )=> (
-                        <main key={name} className="mx-4">
+                        <main key={name} className="mx-7">
                             <svg 
+                                className="fill-secondaryC hover:fill-white hover:opacity-45 transition duration-500"
                                 xmlns={svgProps.xmlns} 
                                 viewBox={svgProps.viewBox} 
-                                width="45px" 
-                                height="45px">
+                                width="75px" 
+                                height="75px">
                                     <path d={svgProps.path}/>
                             </svg>
                         </main>
