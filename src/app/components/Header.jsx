@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
+import Meteors from "./Meteors"
 
 export default function Header() {
     const [isHover, setHover] = useState(false);
@@ -49,6 +50,7 @@ export default function Header() {
                         </svg>
                     </Link>
                 </footer>
+                <Meteors number={13}/>
             </main>
     )
 }
