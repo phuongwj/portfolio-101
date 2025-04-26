@@ -8,15 +8,14 @@ export default function Header() {
     const [isHover, setHover] = useState(false);
 
     return (
-            <main className="flex flex-col h-screen w-full max-w-full gap-y-2 bg-main items-center justify-center text-white px-6">
-                <section className="flex flex-col text-5xl font-bold text-center">
-                    <h1>
-                        nice to meet you,
-                    </h1>
-                    <span className="flex gap-x-3">
+            <main className="flex flex-col h-screen w-full gap-y-2 bg-main items-center justify-center text-white px-6">
+
+                {/* Sm -> text-4xl; Md and above -> text-5xl */}
+                <section className="flex flex-col font-bold md:text-5xl sm:text-4xl text-center">
+                    <h1> nice to meet you, </h1>
+                    <span className="flex flex-wrap justify-center gap-x-2">
                         i'm 
-                            <span className={
-                            (isHover 
+                            <span className={(isHover 
                                 ? "text-white transition duration-500" 
                                 : "text-mainC transition duration-500")}> 
                                 phuong
@@ -24,8 +23,7 @@ export default function Header() {
                             <span>
                                 - aka
                             </span>
-                            <span className={
-                            (isHover 
+                            <span className={(isHover 
                                 ? "ml-1.5 text-mainC cursor-help opacity-100 transition duration-500" 
                                 : "ml-1.5 cursor-help transition duration-500")}
                                 onMouseEnter={() => setHover(true)}
@@ -35,7 +33,9 @@ export default function Header() {
                     </span>
                 </section>
                 <Meteors number={15}/>
-                <p className="mt-4 text-white/50 text-lg">
+
+                {/* Sm -> text-base; Md andabove -> text-lg */}
+                <p className="mt-4 text-white/50 sm:text-base md:text-lg">
                     an aspiring & dedicated developer
                 </p>
                 <footer className="w-fit flex flex-wrap gap-2 mt-3">
