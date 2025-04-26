@@ -11,11 +11,10 @@ export default function Meteors({number}) {
       const containerWidth = containerRef.current?.offsetWidth || window.innerWidth;
       const containerHeight = containerRef.current?.offsetHeight || window.innerHeight;
       const spacingWidth = containerWidth / number;
-      const spacingHeight = containerHeight / number;
 
       const newMeteors = new Array(number).fill(true).map((_, idx) => ({
         id: idx,
-        top: Math.floor(spacingHeight),
+        top: Math.floor(Math.random() * containerHeight),
         left: Math.floor(spacingWidth * idx),
         delay: Math.random() * 5,
         duration: Math.floor(Math.random() * (10 - 5) + 5),
@@ -42,7 +41,7 @@ export default function Meteors({number}) {
                 "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#555f6d] before:to-transparent"
              )}   
              style={{
-                top: "-10px", 
+                top: `${elem.top}px`, 
                 left: `${elem.left}px`,
                 animationDelay:  `${elem.delay}s`,
                 animationDuration: `${elem.duration}s`,
