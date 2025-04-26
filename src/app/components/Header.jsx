@@ -32,7 +32,7 @@ export default function Header() {
                             </span>
                     </span>
                 </section>
-                <Meteors number={15}/>
+                {/* <Meteors number={15}/> */}
 
                 {/* Sm -> text-base; Md and above -> text-lg */}
                 <p className="mt-4 text-white/50 sm:text-base md:text-lg">

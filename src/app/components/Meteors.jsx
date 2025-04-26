@@ -14,7 +14,7 @@ export default function Meteors({number}) {
 
       const newMeteors = new Array(number).fill(true).map((_, idx) => ({
         id: idx,
-        top: Math.floor(Math.random() * containerHeight),
+        top: containerHeight,
         left: Math.floor(spacingWidth * idx),
         delay: Math.random() * 5,
         duration: Math.floor(Math.random() * (10 - 5) + 5),

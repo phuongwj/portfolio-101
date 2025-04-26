@@ -3,7 +3,7 @@ import React from 'react';
 export default function About() {
 
   return (
-    <main className="bg-secondary h-screen flex flex-col justify-between px-56 gap-10 text-white">
+    <main className="bg-secondary h-screen flex flex-col justify-between sm:px-10 lg:px-56 gap-10 text-white">
         <h1 className="pt-32 font-bold text-5xl underline underline-offset-8 decoration-mainC decoration-4">
             about 
         </h1>
