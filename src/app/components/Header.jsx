@@ -34,7 +34,7 @@ export default function Header() {
                 </section>
                 <Meteors number={15}/>
 
-                {/* Sm -> text-base; Md andabove -> text-lg */}
+                {/* Sm -> text-base; Md and above -> text-lg */}
                 <p className="mt-4 text-white/50 sm:text-base md:text-lg">
                     an aspiring & dedicated developer
                 </p>

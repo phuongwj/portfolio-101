@@ -9,11 +9,14 @@ export default function Meteors({number}) {
   useEffect(() => {
     const generateMeteors = () => {
       const containerWidth = containerRef.current?.offsetWidth || window.innerWidth;
-      const spacing = containerWidth / number;
+      const containerHeight = containerRef.current?.offsetHeight || window.innerHeight;
+      const spacingWidth = containerWidth / number;
+      const spacingHeight = containerHeight / number;
 
       const newMeteors = new Array(number).fill(true).map((_, idx) => ({
         id: idx,
-        left: Math.floor(spacing * idx),
+        top: Math.floor(spacingHeight),
+        left: Math.floor(spacingWidth * idx),
         delay: Math.random() * 5,
         duration: Math.floor(Math.random() * (10 - 5) + 5),
       }));
@@ -29,7 +32,7 @@ export default function Meteors({number}) {
   return (
     <div 
       ref={containerRef}
-      className="absolute top-0 left-0 w-full h-full pointer-events-none">
+      className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         {meteors.map((elem) => {
           return (
             <span
