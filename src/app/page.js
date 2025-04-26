@@ -6,7 +6,6 @@ import Experiences from "@/app/components/Experiences";
 import Projects from "@/app/components/Projects";
 import Toolbox from "@/app/components/Toolbox";
 import About from "@/app/components/About";
-// import fetchTrack from "@/app/fetchTrack";
 
 export default function page() {
   return (
@@ -20,4 +19,3 @@ export default function page() {
   )
 }
 
-//flex flex-col py-12 gap-8 max-w-[690px]

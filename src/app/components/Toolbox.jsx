@@ -3,9 +3,6 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { tools } from "@/app/components/Tools";
 
-// export const tools = [
-//     { name: "Java", icon: Java},
-// ]
 
 export default function Toolbox() {
     return (
@@ -15,7 +12,7 @@ export default function Toolbox() {
                     the <span className="font-bold text-white/75 underline underline-offset-4 decoration-mainC"> toolbox </span>i've been working with
                 </h1>
             </section>
-            <section className="h-fit py-5">
+            <section className="h-fit">
                 <Marquee pauseOnHover speed={35} gradient gradientWidth={235} gradientColor='#191919'>
                     {Object.entries(tools).map(([name, svgProps] )=> (
                         <main key={name} className="mx-7">
@@ -23,6 +20,7 @@ export default function Toolbox() {
                                 className="fill-secondaryC hover:fill-white hover:opacity-45 transition duration-500"
                                 xmlns={svgProps.xmlns} 
                                 viewBox={svgProps.viewBox} 
+                                transform={svgProps.transform}
                                 width="75px" 
                                 height="75px">
                                     <path d={svgProps.path}/>

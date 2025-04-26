@@ -8,17 +8,18 @@ export default function Header() {
     const [isHover, setHover] = useState(false);
 
     return (
-            <main className="flex flex-col h-screen w-full gap-y-2 bg-main items-center justify-center  text-white">
-                <section className="flex flex-col font-bold text-5xl text-center">
+            <main className="flex flex-col h-screen w-full max-w-full gap-y-2 bg-main items-center justify-center text-white px-6">
+                <section className="flex flex-col text-5xl font-bold text-center">
                     <h1>
                         nice to meet you,
                     </h1>
-                    <h1 className="flex gap-x-3">
+                    <span className="flex gap-x-3">
                         i'm 
-                            <span className={(isHover 
-                                        ? "text-white transition duration-500" 
-                                        : "text-mainC transition duration-500")}> 
-                                        phuong
+                            <span className={
+                            (isHover 
+                                ? "text-white transition duration-500" 
+                                : "text-mainC transition duration-500")}> 
+                                phuong
                             </span>
                             <span>
                                 - aka
@@ -31,8 +32,9 @@ export default function Header() {
                                 onMouseLeave={() => setHover(false)} > 
                                 julia 
                             </span>
-                    </h1>
+                    </span>
                 </section>
+                <Meteors number={15}/>
                 <p className="mt-4 text-white/50 text-lg">
                     an aspiring & dedicated developer
                 </p>
@@ -50,7 +52,6 @@ export default function Header() {
                         </svg>
                     </Link>
                 </footer>
-                <Meteors number={13}/>
             </main>
     )
 }

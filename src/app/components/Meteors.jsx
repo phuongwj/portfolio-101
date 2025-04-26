@@ -1,27 +1,52 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import clsx from "clsx";
 
 export default function Meteors({number}) {
-    const meteors = new Array(number || 20).fill(true);
+  const containerRef = useRef(null);
+  const [meteors, setMeteors] = useState([]);
+
+  useEffect(() => {
+    const generateMeteors = () => {
+      const containerWidth = containerRef.current?.offsetWidth || window.innerWidth;
+      const spacing = containerWidth / number;
+
+      const newMeteors = new Array(number).fill(true).map((_, idx) => ({
+        id: idx,
+        left: Math.floor(spacing * idx),
+        delay: Math.random() * 5,
+        duration: Math.floor(Math.random() * (10 - 5) + 5),
+      }));
+
+      setMeteors(newMeteors);
+    };
+
+    generateMeteors();
+    window.addEventListener('resize', generateMeteors);
+    return () => window.removeEventListener('resize', generateMeteors);
+  }, [number]);
 
   return (
-    <>
-        {meteors.map((elem, idx) => (
+    <div 
+      ref={containerRef}
+      className="absolute top-0 left-0 w-full h-full pointer-events-none">
+        {meteors.map((elem) => {
+          return (
             <span
-             key={"meteor" + idx}
+             key={`meteor-${elem.id}`}
              className={clsx(
                 "animate-meteor-effect absolute h-0.5 w-0.5 rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[215deg]",
                 "before:content-[''] before:absolute before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#64748b] before:to-transparent"
              )}   
              style={{
-                top: 0, 
-                left: Math.floor(Math.random() * (600 - 0) + 0) + "px",
-                animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
-                animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
+                top: "0px", 
+                left: `${elem.left}px`,
+                animationDelay:  `${elem.delay}s`,
+                animationDuration: `${elem.duration}s`,
              }}
             ></span>
-        ))}
-    </>
+          );
+          })}
+    </div>
   )
 }
