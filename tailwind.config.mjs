@@ -46,6 +46,14 @@ export default withMT({
       },
       borderWidth: {
         '1': '1px',
+      },
+      screens: {
+        'sm': '24.375rem', // 390px
+        '8xl': '88rem', // 1408px
+        '9xl': '96rem', // my desktop - 1536px
+        '10xl': '104rem',
+        '11xl': '112rem',
+        '12xl': '160rem', // my big ass screen - 2560px
       }
     },
   },

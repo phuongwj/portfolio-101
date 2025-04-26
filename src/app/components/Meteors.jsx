@@ -35,11 +35,11 @@ export default function Meteors({number}) {
             <span
              key={`meteor-${elem.id}`}
              className={clsx(
-                "animate-meteor-effect absolute h-0.5 w-0.5 rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[215deg]",
-                "before:content-[''] before:absolute before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#64748b] before:to-transparent"
+                "animate-meteor-effect absolute h-0.5 w-0.5 rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[45deg]",
+                "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#5d6c81] before:to-transparent"
              )}   
              style={{
-                top: "0px", 
+                top: "-10px", 
                 left: `${elem.left}px`,
                 animationDelay:  `${elem.delay}s`,
                 animationDuration: `${elem.duration}s`,
