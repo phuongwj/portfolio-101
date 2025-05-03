@@ -15,7 +15,7 @@ export default function Header() {
                 <section className="flex flex-col font-bold md:text-5xl sm:text-4xl text-center">
                     <h1> nice to meet you, </h1>
                     <span className="flex flex-wrap justify-center gap-x-2">
-                        i'm 
+                        i'm
                             <span className={(isHover 
                                 ? "text-white transition duration-500" 
                                 : "text-mainC transition duration-500")}> 

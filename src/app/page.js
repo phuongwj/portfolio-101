@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react'
+import Oneforall from "@/app/components/Oneforall";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import Header from "@/app/components/Header";
 import Experiences from "@/app/components/Experiences";
@@ -9,11 +10,12 @@ import About from "@/app/components/About";
 
 export default function page() {
   return (
-    <main className="flex flex-col items-center">
-          <Header/>
+    <main className="bg-newBg">
+          <Oneforall/>
+          {/* <Header/>
           <About/>
           <Toolbox/>
-          <Experiences/>
+          <Experiences/> */}
           {/* <Projects/>*/}
     </main>
   )

@@ -4,7 +4,7 @@
         "title": "cashier pt",
         "org": "@ wholesale club",
         "location": "halifax, ns",
-        "time": "apr 2024 - sept 2024",
+        "time": "apr - sept 2024",
         "info": "quite an irrelevant job to put on here, but it's my first ever real job, which i really value because not only did it strengthen my communication skills, but it also taught me to handle challenging situations while adapting to a new environment."
     },
     {
@@ -12,7 +12,7 @@
         "title": "full-stack developer intern",
         "org": "@ hci4good lab, dalhousie university",
         "location": "halifax, ns",
-        "time": "jun 2024 - aug 2024",
+        "time": "jun - aug 2024",
         "info": "i spent 2 months of Summer 2024 with 7 other students building a website that resulted in me being proficient in tools like React.js, Node.js, SCSS and also gained knowledge of how Express.js worked with our backend - MongoDB."
     },
     {
@@ -28,7 +28,7 @@
         "title": "software developer intern",
         "org": "@ sprypoint",
         "location": "charlottetown, pei (remote)",
-        "time": "may 2025 - aug 2025",
+        "time": "may - aug 2025",
         "info": "coming soon :)"
     }
 ]
