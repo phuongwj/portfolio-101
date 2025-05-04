@@ -37,12 +37,12 @@ export default withMT({
         wless: '#838383',
 
         newBg: "#030712", // dark blue
-        iconBg: "#23242a", // background for the github, linkedin, music icons
+        widBg: "#0f141a", // background for the github, linkedin
         first: "#f3f7fa", // good white (main text color)
         second: "#838898", // good color? (secondary text color)
       },
       height: {
-        '5.5': '1.375rem', // github, linkedin, music icon size
+        '5.5': '1.375rem', // github, linkedin
 
         '6.5': '1.625rem',
         '18': '4.6rem',
@@ -52,6 +52,9 @@ export default withMT({
         '40': '40%',
         '42': '42rem',
         '100': '36rem',
+      },
+      padding: {
+        '3.5': '0.875rem',
       },
       fontSize: {
         'md': '1.05rem',
