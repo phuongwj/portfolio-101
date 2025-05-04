@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import exps from "@/local-json/experiences";
 import tools from "@/local-json/tools";
 import Link from 'next/link';
+import Meteors from "./Meteors"
 
 export default function Oneforall() {
 
@@ -20,9 +21,14 @@ export default function Oneforall() {
 
   return (
     <div className="min-h-screen">
+      
+      <div className="relative">
+        <Meteors number={10}/>
+      </div>
 
       {/* The top */}
       <header className="fixed w-full flex flex-row p-5 justify-between">
+
         {/* Music Widget */}
         <div>
           

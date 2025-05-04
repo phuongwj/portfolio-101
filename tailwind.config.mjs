@@ -15,14 +15,14 @@ export default withMT({
       keyframes: {
         meteor: {
           "0%": { 
-            transform: "rotate(-75deg) translate(0, 0)", 
+            transform: "rotate(-60deg) translate(0, 0)", 
             opacity: 1
           },
           "70%": { 
             opacity: 1 
           },
           "100%": {
-            transform: "rotate(-75deg) translateX(-700px)",
+            transform: "rotate(-60deg) translateX(-260px)",
             opacity: 0,
           },
         },
