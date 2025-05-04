@@ -50,7 +50,7 @@ export default function Oneforall() {
         <section className="w-full flex flex-row justify-between">
           <div>
             <h1 className="text-first text-md font-medium">phuong (julia) pham</h1>
-            <h2 className="text-second text-sm font-medium max-w-[23rem]">undergraduate Computer Science student at Dalhousie University</h2>
+            <h2 className="text-second text-sm font-medium max-w-[23rem]">Undergraduate Computer Science student at Dalhousie University</h2>
           </div>
           <img className="size-16 rounded-full" src="/phuongwj.jpg" alt="Julia's picture"/>
         </section>
@@ -58,14 +58,14 @@ export default function Oneforall() {
         {/* Bit bout myself */}
         <section className="w-full">
           <h2 className="text-first text-2xl font-medium">
-          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to pursue my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and Machine Learning.
+          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to do my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and Machine Learning.
           </h2>
         </section>
 
         {/* Experiences */}
         <section className="w-full flex flex-col gap-4">
 
-          {/* Title */}
+          {/* Experience Title */}
           <h1 className="text-first text-lg font-medium underline underline-offset-4"> experience</h1>
 
           {/* List of Experiences */}
@@ -117,6 +117,13 @@ export default function Oneforall() {
                   ))}
               </ul>
             </section>
+        </section>
+
+        {/* Projects */}
+        <section className="w-full flex flex-col gap-4">
+
+          {/* Toolbox Title */}
+          <h1 className="text-first text-lg font-medium underline underline-offset-4"> my toolbox</h1>
         </section>
       </main>
     </div>
