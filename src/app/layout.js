@@ -2,7 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "@/css/globals.css";
-
+import Meteors from "@/app/components/Meteors"
+import Navbar from './components/Navbar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className=""> 
       <body className={geistSans.className}>
+        <div className="relative"> 
+          <Meteors number={10}/>
+        </div>
+        <Navbar/>
         {children}
       </body>
     </html>
