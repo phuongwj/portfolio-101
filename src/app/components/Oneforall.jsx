@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Marquee from "react-fast-marquee";
+import Slider from "react-slick";
 import exps from "@/local-json/experiences";
 import tools from "@/local-json/tools";
 import Link from 'next/link';
@@ -18,6 +19,17 @@ export default function Oneforall() {
   } 
 
   const [contentIsHovered, setContentHovered] = useState(false);
+
+  {/* For Projects */}
+  const settings = {
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2350,
+  };
 
   return (
     <div className="min-h-screen">
@@ -153,7 +165,30 @@ export default function Oneforall() {
           <h1 className="text-first text-lg font-medium underline underline-offset-4"> projects</h1>
 
           {/* Content */}
-          <p className="text-second">under maintenance :)</p>
+          <div className="w-full overflow-hidden">
+            <Slider {...settings}>
+                <div>
+                  <img src="/orerry.png" className="rounded-2xl" alt="solar system simulator"/>
+                </div>
+                <div>
+                  <img src="/portfolio.png" className="rounded-2xl" alt="portfolio website"/>
+                </div>
+                <div>
+                  <img src="/bathtime.png" className="rounded-2xl" alt="clean a stereotypical cs student"/>
+                </div>
+                <div>
+                  <img src="/compiler.png" className="rounded-2xl" alt="front-end compiler"/>
+                </div>
+                <div>
+                  <img src="/tienlen.png" className="rounded-2xl" alt="vietnamese card game"/>
+                </div>
+                <div>
+                  <img src="/insanity.png" className="rounded-2xl" alt="highscore game, shoot projectiles"/>
+                </div>
+            </Slider> 
+           </div>
+
+           <p className="text-second">description for each project will be added soon, please stay tune :)</p>
         </section>
       </main>
     </div>
