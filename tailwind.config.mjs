@@ -36,7 +36,7 @@ export default withMT({
         secondaryC: '#4D4D4D',
         wless: '#838383',
 
-        newBg: "#030712", // dark blue
+        newBg: "#030712", // dark ass blue
         widBg: "#0f141a", // background for the github, linkedin
         first: "#f3f7fa", // good white (main text color)
         second: "#838898", // good color? (secondary text color)
