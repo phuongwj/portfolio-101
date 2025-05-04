@@ -5,13 +5,16 @@ import Link from 'next/link';
 
 export default function Oneforall() {
 
+  {/* For Experiences */}
   const [expandedId, setExpandedId] = useState(null);
   
   const expsSorted = exps.sort((a, b) => b.id - a.id);
   
   const handleClick = (id) => {
     setExpandedId(expandedId === id ? null : id);
-  }
+  } 
+
+  const [contentIsHovered, setContentHovered] = useState(false);
 
   return (
     <div className="min-h-screen">
@@ -55,7 +58,7 @@ export default function Oneforall() {
         {/* Bit bout myself */}
         <section className="w-full">
           <h2 className="text-first text-2xl font-medium">
-          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">in 2023, i chose to</span> study abroad in Canada to pursue a degree in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and Machine Learning.
+          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to pursue my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and Machine Learning.
           </h2>
         </section>
 
@@ -67,7 +70,7 @@ export default function Oneforall() {
 
           {/* List of Experiences */}
           <section className="flex justify-center">
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-2">
                   {expsSorted.map((exp) => (
                       <li key={exp.id} className="relative group/list flex flex-col transition duration-500">
 
@@ -80,23 +83,35 @@ export default function Oneforall() {
                           />
 
                           {/* Position & Place */}
-                          <section className="text-md p-3 pl-9 rounded-lg flex flex-row justify-between bg-widBg group-hover/list:bg-first transition duration-500">
-                              <h2 className="text-first group-hover/list:text-widBg transition duration-500 font-medium">{exp.title} {exp.org} </h2>
+                          <section className={contentIsHovered 
+                            ? "text-md p-3 pl-9 rounded-lg flex flex-row justify-between bg-widBg transition duration-500"
+                            : "text-md p-3 pl-9 rounded-lg flex flex-row justify-between bg-widBg group-hover/list:bg-first transition duration-500"}>
+                              <h2 className={contentIsHovered 
+                              ? "text-first transition duration-500 font-medium"
+                              : "text-first group-hover/list:text-widBg transition duration-500 font-medium"}>{exp.title} {exp.org} </h2>
                               <p className="text-second transition duration-500 font-medium">{exp.time}</p>
                           </section>
 
                           {/* Arrow Icon */} 
                           <section className="absolute p-3.5 rotate-0 peer-checked:rotate-90 transition-all duration-500">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-5 fill-first group-hover/list:fill-widBg transition duration-500">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                                className={contentIsHovered
+                                ? "size-5 fill-first transition duration-500"
+                                : "size-5 fill-first group-hover/list:fill-widBg transition duration-500"}>
                                   <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" 
                                       clipRule="evenodd" />
                               </svg>
                           </section>
 
                           {/* Content */}
-                          <section className={`overflow-hidden pl-8 transition-all duration-500 ${expandedId === exp.id ? 'max-h-32' : 'max-h-0'}`}>
-                              <h3 className="text-white/45 transition duration-500 mb-0.5">- {exp.location}</h3>
-                              <h4 className="text-white/45 transition duration-500">{exp.info} {exp.id === 2 ? <span> Check out the website </span>: ""} <span> {exp.id === 2 ? <Link href="https://hci4good.cs.dal.ca/" className="font-semibold underline" target="_blank"> here</Link> : ""} </span> </h4>
+                          <section 
+                            className={`mt-2 rounded-lg overflow-hidden bg-widBg/50 transition-all duration-500
+                            ${expandedId === exp.id ? 'max-h-40 opacity-100 px-8 py-3' : 'max-h-0 opacity-0 py-0'}`}
+                            onMouseEnter={() => setContentHovered(true)}
+                            onMouseLeave={() => setContentHovered(false)}
+                          >
+                              <h3 className="text-second transition duration-500 mb-0.5">- {exp.location}</h3>
+                              <h4 className="text-second transition duration-500">{exp.info} {exp.id === 2 ? <span> Check out the website </span>: ""} <span> {exp.id === 2 ? <Link href="https://hci4good.cs.dal.ca/" className="font-semibold underline" target="_blank"> here</Link> : ""} </span> </h4>
                           </section>
                       </li>
                   ))}
