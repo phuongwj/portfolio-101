@@ -48,7 +48,7 @@ export default function Oneforall() {
 
         {/* Bit bout myself */}
         <section className="w-full">
-          <h2 className="text-first Stext-2xl font-medium">
+          <h2 className="text-first text-2xl font-medium">
           <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to do my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and Machine Learning.
           </h2>
         </section>
