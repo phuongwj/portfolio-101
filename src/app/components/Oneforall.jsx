@@ -70,7 +70,6 @@ export default function Oneforall() {
               </svg>
             </span>
           </Link>
-
           
           {/* List of Experiences */}
           <section className="flex justify-center">
@@ -127,13 +126,22 @@ export default function Oneforall() {
         <section className="w-full flex flex-col gap-4">
 
           {/* Projects Title */}
-          <h1 className="text-first text-lg font-medium underline underline-offset-4"> projects</h1>
+          <Link href="/projects"
+            className="w-fit inline-flex items-center gap-1 text-first fill-first text-lg font-medium hover:underline hover:underline-offset-4 hover:opacity-60 ease-in-out transition duration-300">
+            <span>projects</span>
+            <span className="pt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  className="h-3.5 w-3.5">
+                <path d="M 3 3 L 3 21 L 21 21 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 3 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"/>
+              </svg>
+            </span>
+          </Link>
 
           {/* Content */}
           <div className="w-full overflow-hidden">
             <Slider {...settings}>
               {projsSorted.map((proj) => (
-                <div key={proj.i} className="relative">
+                <div key={proj.id} className="relative">
                   {/* Project Image */}
                   <img src={proj.image} alt={proj.alt} className="rounded-t-2xl" />
 
@@ -146,15 +154,13 @@ export default function Oneforall() {
               ))}
             </Slider>
            </div>
-
-           <p className="text-second">details for each project will be added soon, please stay tune :)</p>
         </section>
 
         {/* Toolbox */}
         <section className="w-full flex flex-col gap-4">
 
           {/* Toolbox Title */}
-          <h1 className="text-first text-lg font-medium underline underline-offset-4"> toolbox</h1>
+          <h1 className="text-first text-lg font-medium"> toolbox</h1>
 
           <Marquee pauseOnHover speed={45} gradient gradientColor='#030712' gradientWidth={125}
             className="cursor-help">
