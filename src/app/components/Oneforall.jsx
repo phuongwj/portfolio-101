@@ -62,7 +62,7 @@ export default function Oneforall() {
           {/* Experience Title */}
           <Link href="/experiences"
             className="w-fit inline-flex items-center gap-1 text-first fill-first text-lg font-medium hover:underline hover:underline-offset-4 hover:opacity-60 ease-in-out transition duration-300">
-            <span>experiences</span>
+            <span>experience</span>
             <span className="pt-0.5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                   className="h-3.5 w-3.5">
