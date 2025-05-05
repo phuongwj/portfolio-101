@@ -2,26 +2,43 @@
     {
         "id": 1,
         "title": "inSanity",
-        "info": "here too ofc"
+        "tools": "godot / gdscript / aseprite",
+        "image": "/insanity.png",
+        "alt": "highscore game, shoot projectiles"
     },
     {
         "id": 2,
-        "title": "Tien Len",
-        "info": "something will be here as well"
+        "title": "tien len",
+        "tools": "java",
+        "image": "/tienlen.png",
+        "alt": "vietnamese card game"
     },
     {
         "id": 3,
-        "title": "Orrery Web App",
-        "info": "and something here"
+        "title": "front-end compiler",
+        "tools": "python",
+        "image": "/compiler.png",
+        "alt": "front-end compiler"
     },
     {
         "id": 4,
-        "title": "Front-end Compiler",
-        "info": "something here"
+        "title": "bath-time!",
+        "tools": "godot / gdscript / inkscape",
+        "image": "/bathtime.png",
+        "alt": "clean a stereotypical cs student"
     },
     {
         "id": 5,
         "title": "portfolio-101",
-        "info": "Created a website :)"
+        "tools": "node js / next js / react js / tailwindcss",
+        "image": "/portfolio.png",
+        "alt": "portfolio website"
+    },
+    {
+        "id": 6,
+        "title": "orerry web app",
+        "tools": "node js / express js / react js / horizon api / scss",
+        "image": "/orerry.png",
+        "alt": "solar system simulator"
     }
 ]

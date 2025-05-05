@@ -42,18 +42,21 @@ export default withMT({
         second: "#838898", // good color? (secondary text color)
       },
       height: {
+        '3.5': '0.875rem', // link icon
         '5.5': '1.375rem', // github, linkedin
-
-        '6.5': '1.625rem',
+        '6.5': '1.625rem', // github, linkedin again? i dont remember
         '18': '4.6rem',
         '30': '7.5rem',
       },
       width: {
+        '3.5': '0.875rem', // link icon
+        '6.5': '1.625rem',
         '40': '40%',
         '42': '42rem',
         '100': '36rem',
       },
       padding: {
+        '0.5': '0.2rem',
         '3.5': '0.875rem',
       },
       fontSize: {

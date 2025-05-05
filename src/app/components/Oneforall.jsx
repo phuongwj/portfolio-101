@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
 import exps from "@/local-json/experiences";
+import projs from "@/local-json/projects";
 import tools from "@/local-json/tools";
 import Link from 'next/link';
 
@@ -21,6 +22,8 @@ export default function Oneforall() {
   const [contentIsHovered, setContentHovered] = useState(false);
 
   {/* For Projects */}
+  const projsSorted = projs.sort((a, b) => b.id - a.id);
+
   const settings = {
     fade: true,
     infinite: true,
@@ -57,7 +60,17 @@ export default function Oneforall() {
         <section className="w-full flex flex-col gap-4">
 
           {/* Experience Title */}
-            <Link href="/experiences" className="text-first text-lg font-medium underline underline-offset-4"> experiences</Link>
+          <Link href="/experiences"
+            className="w-fit inline-flex items-center gap-1 text-first fill-first text-lg font-medium hover:underline hover:underline-offset-4 hover:opacity-60 ease-in-out transition duration-300">
+            <span>experiences</span>
+            <span className="pt-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  className="h-3.5 w-3.5">
+                <path d="M 3 3 L 3 21 L 21 21 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 3 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z"/>
+              </svg>
+            </span>
+          </Link>
+
           
           {/* List of Experiences */}
           <section className="flex justify-center">
@@ -119,28 +132,22 @@ export default function Oneforall() {
           {/* Content */}
           <div className="w-full overflow-hidden">
             <Slider {...settings}>
-                <div>
-                  <img src="/orerry.png" className="rounded-2xl" alt="solar system simulator"/>
+              {projsSorted.map((proj) => (
+                <div key={proj.i} className="relative">
+                  {/* Project Image */}
+                  <img src={proj.image} alt={proj.alt} className="rounded-t-2xl" />
+
+                  {/* Project Overlay Label */}
+                  <div className="bg-widBg p-4 gap-1 rounded-b-2xl">
+                    <h3 className="text-first text-base font-semibold">{proj.title}</h3>
+                    <p className="text-second text-sm">{proj.tools}</p>
+                  </div>
                 </div>
-                <div>
-                  <img src="/portfolio.png" className="rounded-2xl" alt="portfolio website"/>
-                </div>
-                <div>
-                  <img src="/bathtime.png" className="rounded-2xl" alt="clean a stereotypical cs student"/>
-                </div>
-                <div>
-                  <img src="/compiler.png" className="rounded-2xl" alt="front-end compiler"/>
-                </div>
-                <div>
-                  <img src="/tienlen.png" className="rounded-2xl" alt="vietnamese card game"/>
-                </div>
-                <div>
-                  <img src="/insanity.png" className="rounded-2xl" alt="highscore game, shoot projectiles"/>
-                </div>
-            </Slider> 
+              ))}
+            </Slider>
            </div>
 
-           <p className="text-second">description for each project will be added soon, please stay tune :)</p>
+           <p className="text-second">details for each project will be added soon, please stay tune :)</p>
         </section>
 
         {/* Toolbox */}
