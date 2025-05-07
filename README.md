@@ -1,10 +1,3 @@
-This website is currently being deployed under branch `main`. Initially, I have my rough layout for `v1` but quickly came to realize that the page was too packed 
-and doesn't really give a minimalistic feel. Therefore, I am working on a more refined version of my website, giving a new layout and colour theme. Please hang
-on! I am going through a rough semester with trying to get at least A- for all of my courses, being a teaching assistant for 2 courses, doing Grind75 on Leetcode 
-and actively searching for Summer 2025 Co-ops, this website will for sure be finished and live up to everyone's expectations :D
-
-Update [06/02/2025]: Got an co-op offer from SryPoint on 05/02/2025 😽. `stress--`
-
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
