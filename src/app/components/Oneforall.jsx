@@ -7,8 +7,6 @@ import projs from "@/local-json/projects";
 import tools from "@/local-json/tools";
 import Link from 'next/link';
 
-require("dotenv").config();
-
 // This is the homepage if you're wondering why I name it like this...
 export default function Oneforall() {
 
