@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
 import exps from "@/local-json/experiences";
@@ -7,8 +7,27 @@ import projs from "@/local-json/projects";
 import tools from "@/local-json/tools";
 import Link from 'next/link';
 
+require("dotenv").config();
+
 // This is the homepage if you're wondering why I name it like this...
 export default function Oneforall() {
+
+  {/* For Most Recent Track Fetching */}
+  useEffect(() => {
+    async function fetchTrack() {
+      const apiKey = process.env.NEXT_PUBLIC_LASTFM_API_KEY;
+      const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=phuongwj&api_key=${apiKey}&format=json`;
+
+      try {
+        const response = await fetch(url);
+        const responseJson = await response.json();
+        console.log(responseJson);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchTrack();
+  }, [])
 
   {/* For Experiences */}
   const [expandedId, setExpandedId] = useState(null);
