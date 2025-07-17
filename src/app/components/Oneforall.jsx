@@ -7,29 +7,6 @@ import projs from "@/local-json/projects";
 import tools from "@/local-json/tools";
 import Link from 'next/link';
 
-function TrackCard({ track }) {
-  const recent = track?.recenttracks?.track?.[0];
-  const artist = recent?.artist?.['#text'];
-  const name = recent?.name;
-  const albumArt = recent?.image?.[2]?.['#text']; // Medium size image
-  const url = recent?.url;
-
-  if (!recent) return null;
-
-  return (
-    <div className="fixed top-4 left-4 z-50 bg-widBg text-first border border-first rounded-lg shadow-md p-3 w-64 flex items-center gap-3 animate-fadeIn">
-      <img src={albumArt || "/default-track.png"} alt="album art" className="w-12 h-12 rounded-md object-cover" />
-      <div className="flex flex-col overflow-hidden">
-        <a href={url} target="_blank" className="text-sm font-semibold truncate hover:underline">
-          {name}
-        </a>
-        <p className="text-xs text-second truncate">{artist}</p>
-      </div>
-    </div>
-  );
-}
-
-
 // This is the homepage if you're wondering why I name it like this...
 export default function Oneforall() {
 
@@ -75,7 +52,7 @@ export default function Oneforall() {
         {/* Bit bout myself */}
         <section className="w-full">
           <h2 className="text-first text-2xl font-medium">
-          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to do my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and Machine Learning.
+          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to do my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and AI/ML.
           </h2>
         </section>
 
