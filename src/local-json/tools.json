@@ -1,15 +1,6 @@
 [
-    "java",
-    "javascript",
-    "python",
     "mysql",
-    "html/css",
-    "node js",
-    "react js",
-    "express js",
-    "next js",
-    "tailwindcss",
-    "scss",
-    "framer motion"
-  ]
-  
+    "postgersql",
+    "git",
+    "docker"
+]
