@@ -14,6 +14,7 @@ export default function Toolbox() {
 
       {/* Toolbox */}
       <section className="flex flex-col items-center gap-4">
+
         {/* Tabs */}
         <div className="w-fit bg-widBg rounded-lg p-1">
           {skills.map((skill, index) => (
@@ -27,6 +28,18 @@ export default function Toolbox() {
             >
               {skill.title}
             </button>
+          ))}
+        </div>
+
+        {/* Skill List */}
+        <div className="w-[90%] h-full bg-widBg py-3 rounded-lg flex flex-wrap gap-4 justify-center">
+          {skills[activeTab].stuffs.map((stuff) => (
+            <div
+              key={stuff}
+              className="w-fit bg-[#1a1e2b] text-first rounded-lg px-2 py-1" 
+            >
+              {stuff}
+            </div>
           ))}
         </div>
         
