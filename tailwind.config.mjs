@@ -38,8 +38,9 @@ export default withMT({
 
         newBg: "#010717", // dark ass blue
         widBg: "#0F1323", // background for the github, linkedin, experience
-        first: "#f3f7fa", // good white (main text color)
-        second: "#838898", // good color? (secondary text color)
+        widExtraBg: "#262f52",
+        first: "#e1e5e8", // good white (main text color)
+        second: "#78909c  ", // good color? (secondary text color)
       },
       height: {
         '3.5': '0.875rem', // link icon

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "languages",
+        "stuffs": ["java", "javascript", "python", "sql", "html/css"]
+    },
+    {
+        "id": 2,
+        "title": "frameworks/libraries",
+        "stuffs": ["react", "next.js", "fastapi", "node.js", "express.js", "knockout.js", "play", "jquery", "tailwindcss", "sass", "framer motion"]
+    },
+    {
+        "id": 3,
+        "title": "tools",
+        "stuffs": ["git", "docker"]
+    }
+]
