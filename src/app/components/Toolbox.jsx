@@ -32,14 +32,22 @@ export default function Toolbox() {
         </div>
 
         {/* Skill List */}
-        <div className="w-[90%] h-full bg-widBg py-3 rounded-lg flex flex-wrap gap-4 justify-center">
+        <div className="w-full h-full bg-widBg py-4 rounded-lg flex flex-wrap gap-4 justify-center">
           {skills[activeTab].stuffs.map((stuff) => (
-            <div
-              key={stuff}
-              className="w-fit bg-[#1a1e2b] text-first rounded-lg px-2 py-1" 
+            <span
+              key={stuff.alt}
+              className="w-fit bg-[#1a1e2b] text-first rounded-lg px-2 py-1 flex flex-row items-center gap-2" 
             >
-              {stuff}
-            </div>
+              {stuff.image ? (
+                <img src={stuff.image} alt={stuff.alt} className="h-5 w-5 object-contain" />
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              )}
+              {stuff.element}
+            </span>
           ))}
         </div>
         

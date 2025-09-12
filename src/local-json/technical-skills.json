@@ -2,16 +2,129 @@
     {
         "id": 1,
         "title": "languages",
-        "stuffs": ["java", "javascript", "python", "sql", "html/css"]
+        "stuffs": [
+            {
+                "element": "java",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+                "alt": "Java logo"
+            },
+            {
+                "element": "javascript",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                "alt": "JavaScript logo"
+            },
+            {
+                "element": "python",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                "alt": "Python logo"
+            },
+            {
+                "element": "sql",
+                "image": "",
+                "alt": "SQL logo"
+            },
+            {
+                "element": "html",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+                "alt": "HTML5 logo"
+            },
+            {
+                "element": "css",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                "alt": "CSS3 logo"
+            }
+        ]
     },
     {
         "id": 2,
         "title": "frameworks/libraries",
-        "stuffs": ["react", "next.js", "fastapi", "node.js", "express.js", "knockout.js", "play", "jquery", "tailwindcss", "sass", "framer motion"]
+        "stuffs": [
+            {
+                "element": "react",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "alt": "React logo"
+            },
+            {
+                "element": "node.js",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+                "alt": "Node.js logo"
+            },
+            {
+                "element": "express.js",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+                "alt": "Express.js logo"
+            },
+            {
+                "element": "fastapi",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+                "alt": "FastAPI logo"
+            },
+            {
+                "element": "next.js",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+                "alt": "Next.js logo"
+            },
+            {
+                "element": "knockout.js",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/knockout/knockout-plain-wordmark.svg",
+                "alt": "Knockout.js logo"
+            },
+            {
+                "element": "jquery",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+                "alt": "jQuery logo"
+            },
+            {
+                "element": "play framework",
+                "image": "",
+                "alt": "Play Framework logo"
+            },
+            {
+                "element": "tailwindcss",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+                "alt": "Tailwind CSS logo"
+            },
+            {
+                "element": "sass",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+                "alt": "Sass logo"
+            },
+            {
+                "element": "framer motion",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
+                "alt": "Framer Motion logo"
+            }
+        ]
     },
     {
         "id": 3,
         "title": "tools",
-        "stuffs": ["git", "docker"]
+        "stuffs": [
+            {
+                "element": "git",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+                "alt": "Git logo"
+            },
+            {
+                "element": "docker",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+                "alt": "Docker logo"
+            },
+            {
+                "element": "postman",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+                "alt": "Postman logo"
+            },
+            {
+                "element": "mysql",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+                "alt": "MySQL logo"
+            },
+            {
+                "element": "postgresql",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+                "alt": "PostgreSQL logo"
+            }
+        ]
     }
 ]
