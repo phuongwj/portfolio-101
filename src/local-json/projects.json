@@ -2,43 +2,65 @@
     {
         "id": 1,
         "title": "inSanity",
-        "tools": "godot / gdscript / aseprite",
+        "tools": ["godot", "gdscript", "aseprite"],
         "image": "/insanity.png",
-        "alt": "highscore game, shoot projectiles"
+        "alt": "highscore game, shoot projectiles",
+        "highlighted": false
     },
     {
         "id": 2,
         "title": "tien len",
-        "tools": "java",
+        "tools": ["java"],
         "image": "/tienlen.png",
-        "alt": "vietnamese card game"
+        "alt": "vietnamese card game",
+        "highlighted": false
     },
     {
         "id": 3,
         "title": "front-end compiler",
-        "tools": "python",
+        "tools": ["python"],
         "image": "/compiler.png",
-        "alt": "front-end compiler"
+        "alt": "front-end compiler",
+        "highlighted": false
     },
     {
         "id": 4,
-        "title": "bath-time!",
-        "tools": "godot / gdscript / inkscape",
-        "image": "/bathtime.png",
-        "alt": "clean a stereotypical cs student"
+        "title": "orerry web app",
+        "tools": ["javascript", "react", "node.js", "express.js", "horizon api", "scss"],
+        "image": "/orerry.png",
+        "alt": "solar system simulator",
+        "highlighted": true
     },
     {
         "id": 5,
-        "title": "portfolio-101",
-        "tools": "node js / next js / react js / tailwindcss",
-        "image": "/portfolio.png",
-        "alt": "portfolio website"
+        "title": "bath-time!",
+        "tools": ["godot", "gdscript", "inkscape"],
+        "image": "/bathtime.png",
+        "alt": "clean a stereotypical cs student",
+        "highlighted": true
     },
     {
         "id": 6,
-        "title": "orerry web app",
-        "tools": "node js / express js / react js / horizon api / scss",
+        "title": "portfolio-101",
+        "tools": ["javascript", "react", "node.js", "next.js", "tailwindcss"],
+        "image": "/portfolio.png",
+        "alt": "portfolio website",
+        "highlighted": true
+    },
+    {
+        "id": 7,
+        "title": "split-it",
+        "tools": ["python", "fastapi", "docker", "javascript", "react", "tailwindcss"],
         "image": "/orerry.png",
-        "alt": "solar system simulator"
+        "alt": "receipt splitting web app with planned AI-powered images scanning and voice recognition",
+        "highlighted": true
+    },
+    {
+        "id": 8,
+        "title": "Dal Microwaves",
+        "tools": ["javascript", "react", "node.js", "express.js", "postgresql", "mapbox gl js", "tailwindcss"],
+        "image": "/orerry.png",
+        "alt": "dalhousie's campus microwaves",
+        "highlighted": true
     }
 ]

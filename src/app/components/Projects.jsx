@@ -3,10 +3,11 @@ import Link from 'next/link';
 import Slider from "react-slick";
 import projs from "@/local-json/projects";
 
+{/* For Projects */}
 export default function Projects() {
 
-    {/* For Projects */}
-    const projsSorted = projs.sort((a, b) => b.id - a.id);
+    // sorts the projects in backwards order, from newest to oldest
+    const projsSorted = projs.sort((a, b) => b.id - a.id); 
     
     const settings = {
     fade: true,
@@ -36,22 +37,52 @@ export default function Projects() {
           </Link>
 
           {/* Content */}
-          <div className="w-full overflow-hidden">
+          {/* <div className="w-full overflow-hidden">
             <Slider {...settings}>
               {projsSorted.map((proj) => (
-                <div key={proj.id} className="relative">
+                <div key={proj.id} className="relative"> */}
                   {/* Project Image */}
-                  <img src={proj.image} alt={proj.alt} className="rounded-t-2xl" />
+                  {/* <img src={proj.image} alt={proj.alt} className="rounded-t-2xl" /> */}
 
                   {/* Project Overlay Label */}
-                  <div className="bg-widBg p-4 gap-1 rounded-b-2xl">
+                  {/* <div className="bg-widBg p-4 gap-1 rounded-b-2xl">
                     <h3 className="text-first text-base font-semibold">{proj.title}</h3>
                     <p className="text-second text-sm">{proj.tools}</p>
                   </div>
-                </div>
+                </div> */}
+              {/* ))} */}
+            {/* </Slider>
+          </div> */}
+
+          {/* Content */}
+          <ul className="flex flex-wrap justify-between text-first">
+              {projsSorted.map((proj) => (
+                <li
+                  key={proj.id} className="flex flex-col w-[20rem]"
+                >
+                    {/* Project Image */}
+                    <img src={proj.image} alt={proj.alt} className="object-contain rounded-2xl shadow-[0_0_25px_5px_rgba(38,47,82,0.25)]" />
+
+                    {/* Project Name */}
+                    <h2>{proj.title}</h2>
+
+                    {/* Project Tech Stack */}
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {proj.tools.map((tool, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-widBg text-second rounded px-2 py-1 text-xs"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+
+                </li>
               ))}
-            </Slider>
-           </div>
+          </ul>
+
+
         </section>
     </>
   )
