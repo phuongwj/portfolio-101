@@ -10,7 +10,7 @@ export default function page() {
             <section className="w-full flex flex-col gap-4">
                 <h1 className="text-first text-lg font-medium underline underline-offset-4">projects</h1>
                 <section className="w-full flex flex-col gap-4">
-                    <p className="text-second">i know it's bad for not showing all the projects in grids layout at once. but please bare with me, they will be added soon, please stay tune :)</p>
+                    <p className="text-second">since the slider made it difficult to view projects, changes will be made to the full layout of the projects section. please stay tune.</p>
                 </section>
             </section>
         </main>
