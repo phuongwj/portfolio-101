@@ -32,8 +32,8 @@ export default withMT({
         widBg: "#cee2eb", // background for the github, linkedin, experience
         widToolsBg: "#e4eef3", // background for the java, javascript, python, sql, etc
         borderColor: "#666b83", // border color (for now we are using for the tools section)
-        first: "#034264", // good white (main text color)
-        second: "#768891", // good color? (secondary text color)
+        first: "#034264", // main color
+        second: "#768891", // secondary color
       },
       height: {
         '3.5': '0.875rem', // link icon
