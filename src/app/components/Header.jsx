@@ -15,7 +15,7 @@ export default function Header() {
         {/* Bit bout myself */}
         <section className="w-full">
           <h2 className="text-first text-2xl font-medium">
-          <span className="text-second">originally from</span> Saigon, Vietnam. <span className="text-second">after graduating highschool in 2023, i chose to</span> study abroad in Canada to do my undergrad in Computer Science. <span className="text-second">i'm passionate about learning and working in areas like</span> Full-Stack, Cloud and AI/ML.
+          originally from Saigon, Vietnam. after graduating highschool in 2023, i chose to study abroad in Canada to do my undergrad in Computer Science. i'm passionate about learning and working in areas like Full-Stack, Cloud and AI/ML.
           </h2>
         </section>
     </>

@@ -23,8 +23,8 @@ export default function Toolbox() {
               onClick={() => setActiveTab(index)}
               className={`px-4 rounded-lg border-1 transition-colors duration-300
                 ${activeTab === index
-                  ? "border-[#393d4d] text-first bg-[#1a1e2b]"
-                  : "border-transparent text-second bg-transparent hover:bg-[#1a1e2b]"}`}
+                  ? "border-[#666b83] text-first bg-widToolsBg"
+                  : "border-transparent text-second bg-transparent hover:bg-widToolsBg"}`}
             >
               {skill.title}
             </button>
@@ -36,7 +36,7 @@ export default function Toolbox() {
           {skills[activeTab].stuffs.map((stuff) => (
             <span
               key={stuff.alt}
-              className="w-fit bg-[#1a1e2b] text-first rounded-lg px-2 py-1 flex flex-row items-center gap-2" 
+              className="w-fit bg-widToolsBg text-first rounded-lg px-2 py-1 flex flex-row items-center gap-2" 
             >
               {stuff.image ? (
                 <img src={stuff.image} alt={stuff.alt} className="h-5 w-5 object-contain" />

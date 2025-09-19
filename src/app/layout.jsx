@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className=""> 
       <body className={`${geistSans.className} bg-newBg`}>
-        <div className="relative"> 
+        {/* <div className="relative"> 
           <Meteors number={10}/>
-        </div>
+        </div> */}
         <Navbar/>
         <div className="min-h-screen">
           {children}

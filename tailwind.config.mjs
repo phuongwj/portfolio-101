@@ -28,19 +28,12 @@ export default withMT({
         },
       },
       colors: {
-        main: "#1B1D1F",
-        secondary: '#191919',
-        huh: '#404040',
-        huh2: '#262626',
-        mainC: '#467CCC',
-        secondaryC: '#4D4D4D',
-        wless: '#838383',
-
-        newBg: "#010717", // dark ass blue
-        widBg: "#0F1323", // background for the github, linkedin, experience
-        widExtraBg: "#262f52",
-        first: "#e1e5e8", // good white (main text color)
-        second: "#78909c  ", // good color? (secondary text color)
+        newBg: "#E0F0F8", // dark ass blue
+        widBg: "#cee2eb", // background for the github, linkedin, experience
+        widToolsBg: "#e4eef3", // background for the java, javascript, python, sql, etc
+        borderColor: "#666b83", // border color (for now we are using for the tools section)
+        first: "#034264", // good white (main text color)
+        second: "#768891", // good color? (secondary text color)
       },
       height: {
         '3.5': '0.875rem', // link icon
