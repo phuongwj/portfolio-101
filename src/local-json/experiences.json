@@ -1,32 +1,27 @@
 [
     {
         "id": 1,
-        "title": "cashier pt",
-        "org": "@ wholesale club",
-        "location": "halifax, ns",
-        "time": "apr - sept 2024",
-        "info": "quite an irrelevant job to put on here, but it's my first ever real job, which i really value because not only did it strengthen my communication skills, but it also taught me to handle challenging situations while adapting to a new environment."
-    },
-    {
-        "id": 2,
-        "title": "full-stack developer intern",
-        "org": "@ hci4good lab",
+        "title": "web developer intern",
+        "org": "hci4good lab, dalhousie university",
+        "image": "/dal_logo.png",
         "location": "halifax, ns",
         "time": "jun - aug 2024",
         "info": "i spent 2 months of Summer 2024 with 7 other students building a website that resulted in me being proficient in tools like React.js, Node.js, SCSS and also gained knowledge of how Express.js worked with our backend - MongoDB."
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "teaching assistant",
-        "org": "@ dalhousie university",
+        "org": "dalhousie university",
+        "image": "/dal_logo.png",
         "location": "halifax, ns",
         "time": "sept 2024 - present",
         "info": "following my successful Summer 2024 internship, i landed a Teaching Assistant role at my university, where i co-lead labs in a variety of courses to guide students through their labs, assignments, and to address any questions or concerns that they had."
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "software developer intern",
-        "org": "@ sprypoint",
+        "org": "sprypoint",
+        "image": "/sprypoint_logo.png",
         "location": "charlottetown, pei (remote)",
         "time": "may - aug 2025",
         "info": "coming soon :)"
