@@ -7,7 +7,7 @@ import Toolbox from "@/app/components/Toolbox";
 
 export default function page() {
   return (
-    <main className="py-32 min-h-screen w-full max-w-3xl mx-auto flex flex-col items-center gap-12">
+    <main className="py-20 min-h-screen w-full max-w-4xl mx-auto flex flex-col items-center gap-12">
       <Header/>
       <Experiences/>
       <Quote/>

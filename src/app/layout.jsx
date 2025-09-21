@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         {/* <div className="relative"> 
           <Meteors number={10}/>
         </div> */}
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className="min-h-screen">
           {children}
         </div>

@@ -1,9 +1,29 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Track from "@/app/components/Track";
 import Link from 'next/link';
 
 export default function Navbar() {
+
+  const [count, setCount] = useState();
+
+  useEffect(() => {
+    async function fetchCount() {
+      try {
+        const response = await fetch('/api/counter');
+        const responseObj = await response.json();
+
+        const count = await responseObj.count;
+        setCount(count);
+      } catch (error) {
+        console.error("Unable to fetch the visitor count", error);
+        setCount(null);
+      }
+    }
+
+    fetchCount();
+  }, []);
+
   return (
     <>
       {/* The Top */}
@@ -13,6 +33,8 @@ export default function Navbar() {
         <div>
             <Track/>
         </div>
+
+        <p>The count is: {JSON.stringify(count)} </p>
 
         {/* Icons */}
         <div className="flex flex-row gap-2 ">

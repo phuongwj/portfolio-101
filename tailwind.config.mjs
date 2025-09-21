@@ -28,23 +28,18 @@ export default withMT({
         },
       },
       colors: {
-        newBg: "#E0F0F8", // dark ass blue
+        newBg: "#E4F0F6", // light blue bg
         widBg: "#cee2eb", // background for the github, linkedin, experience
-        widToolsBg: "#e4eef3", // background for the java, javascript, python, sql, etc
+        widToolsBg: "#E3EDF1", // background for the java, javascript, python, sql, etc
         borderColor: "#666b83", // border color (for now we are using for the tools section)
         first: "#034264", // main color
         second: "#768891", // secondary color
       },
       height: {
-        '3.5': '0.875rem', // link icon
-        '5.5': '1.375rem', // github, linkedin
-        '6.5': '1.625rem', // github, linkedin again? i dont remember
         '18': '4.6rem',
         '30': '7.5rem',
       },
       width: {
-        '3.5': '0.875rem', // link icon
-        '6.5': '1.625rem',
         '40': '40%',
         '42': '42rem',
         '100': '36rem',
