@@ -7,11 +7,8 @@ export default function Track() {
 
   useEffect(() => {
     async function fetchTrack() {
-      const apiKey = process.env.NEXT_PUBLIC_LASTFM_API_KEY;
-      const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=phuongwj&api_key=${apiKey}&format=json`;
-
       try {
-        const response = await fetch(url);
+        const response = await fetch('/api/track');
         const responseJson = await response.json();
         setTrack(responseJson);
       } catch (error) {
