@@ -14,7 +14,7 @@ export default function Experiences() {
 
           {/* Experience Title */}
           <div
-            className="w-fit text-first text-xl font-medium">
+            className="w-fit text-first text-2xl font-light">
             <span>experience</span>
           </div>
           
