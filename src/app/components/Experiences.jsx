@@ -24,8 +24,8 @@ export default function Experiences() {
                   {expsSorted.slice(0, 4).map((exp) => (
                       <li key={exp.id} className="flex flex-col">
 
-                        {/* Company Logo & the Position, Company */}
-                        <section className="text-md py-2 px-3 rounded-xl flex flex-row bg-widBg">
+                        {/* Left Side: Company Logo & the Position, Company */}
+                        <section className="text-md py-2 px-3 rounded-xl flex flex-row justify-between bg-widBg">
                           <div className="flex items-center gap-3">
 
                             <img
@@ -36,9 +36,14 @@ export default function Experiences() {
 
                             <div className="flex flex-col">
                               <h2 className="text-first font-medium">{exp.title}</h2>
-                              <h3 className="text-second text-sm">{exp.org}</h3>
+                              <h3 className="text-second text-sm font-base">{exp.org}</h3>
                             </div>
                           </div>
+
+                          {/* Right Side: Duration */}
+                          <section className="flex items-center">
+                            <h2 className="text-second font-light text-sm">{exp.duration}</h2>
+                          </section>
                         </section>
                       </li>
                   ))}
