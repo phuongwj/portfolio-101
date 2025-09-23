@@ -9,7 +9,7 @@ export default function Toolbox() {
     <section className="w-full flex flex-col gap-4">
 
       <section>
-        <h1 className="text-first text-lg font-medium"> technical skills </h1>
+        <h1 className="text-first text-2xl font-light"> technical skills </h1>
       </section>
 
       {/* Toolbox */}

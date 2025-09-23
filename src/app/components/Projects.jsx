@@ -25,7 +25,7 @@ export default function Projects() {
 
           {/* Projects Title */}
           <Link href="/projects"
-            className="w-fit inline-flex items-center gap-1 text-first fill-first text-lg font-medium hover:underline hover:underline-offset-4 hover:opacity-60 ease-in-out transition duration-300">
+            className="w-fit inline-flex items-center gap-1 text-first fill-first text-2xl font-light hover:underline hover:underline-offset-4 hover:opacity-60 ease-in-out transition duration-300">
             <span>projects</span>
 
             {/* Link Icon */}
