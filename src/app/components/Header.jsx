@@ -10,7 +10,7 @@ export default function Header() {
           <div className="flex-1 space-y-6">
             <h1 className="text-first text-4xl font-light">phuong (julia) pham</h1>
 
-            <h2 className="text-second text-lg font-medium max-w-lg">Undergraduate Computer Science student at Dalhousie University</h2>
+            <h2 className="text-second text-lg font-medium max-w-lg">undergraduate Computer Science student at Dalhousie University</h2>
             
             <h2 className="text-second leading-relaxed text-base max-w-xl">
               originally from <span className="text-first"> Saigon, Vietnam</span>. after graduating highschool in 2023, i chose to study abroad in Canada to do my undergrad in Computer Science. 
