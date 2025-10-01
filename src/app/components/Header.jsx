@@ -23,6 +23,7 @@ export default function Header() {
             {/* Icons */}
             <div className="flex items-center gap-5">
 
+                {/* GitHub */}
                 <div className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
                     className="h-5 w-5 fill-first">
@@ -33,6 +34,7 @@ export default function Header() {
                   </Link>
                 </div>
 
+                {/* LinkedIn */}
                 <div className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                     className="h-6 w-6 fill-first">                    
@@ -52,6 +54,7 @@ export default function Header() {
                   </Link>
                 </div>
 
+                {/* Resume */}
                 <div className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="None"
                     className="h-6 w-6">
@@ -83,12 +86,7 @@ export default function Header() {
               />
             </div>
           </div>
-
-          
-
         </section>
-
-        
     </>
   )
 }
