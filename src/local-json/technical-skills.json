@@ -14,9 +14,19 @@
                 "alt": "JavaScript logo"
             },
             {
+                "element": "typescript",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+                "alt": "TypeScript logo"
+            },
+            {
                 "element": "python",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
                 "alt": "Python logo"
+            },
+            {
+                "element": "php",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+                "alt": "PHP logo"
             },
             {
                 "element": "sql",
@@ -90,6 +100,11 @@
                 "alt": "Sass logo"
             },
             {
+                "element": "bootstrap",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+                "alt": "Bootstrap icon"
+            },
+            {
                 "element": "framer motion",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
                 "alt": "Framer Motion logo"
@@ -98,17 +113,38 @@
     },
     {
         "id": 3,
-        "title": "tools",
+        "title": "devops/cloud",
+        "stuffs": [
+            {
+                "element": "docker",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+                "alt": "Docker logo"
+            },
+            {
+                "element": "aws",
+                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+                "alt": "AWS logo"
+            },
+            {
+                "element": "ci/cd",
+                "image": "",
+                "alt": "CI/CD logo"
+            },
+            {
+                "element": "unit testing",
+                "image": "",
+                "alt": "Unit Testing logo"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "developer tools",
         "stuffs": [
             {
                 "element": "git",
                 "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
                 "alt": "Git logo"
-            },
-            {
-                "element": "docker",
-                "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-                "alt": "Docker logo"
             },
             {
                 "element": "postman",
