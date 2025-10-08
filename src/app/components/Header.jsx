@@ -5,23 +5,23 @@ export default function Header() {
   return (
     <>
       {/* Name and picture*/}
-        <section className="w-full flex flex-row items-center">
+      <section className="w-full flex flex-col-reverse lg:flex-row items-center lg:items-start">
+        {/* Text content */}
+        <div className="flex-1 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
+          <h1 className="text-first text-4xl font-light">phuong (julia) pham</h1>
 
-          <div className="flex-1 space-y-6">
-            <h1 className="text-first text-4xl font-light">phuong (julia) pham</h1>
+          <h2 className="text-second text-lg font-medium max-w-lg">undergraduate Computer Science student at Dalhousie university</h2>
+          
+          <h2 className="text-second leading-relaxed text-base max-w-xl">
+            originally from <span className="text-first"> Saigon, Vietnam</span>. after graduating highschool in 2023, i chose to study abroad in Canada to do my undergrad in Computer Science. 
+          </h2>
+          
+          <h2 className="text-second leading-relaxed text-base max-w-xl">
+            i'm passionate about learning and working in areas like <span className="text-first">Full-Stack Development</span>, <span className="text-first">Cloud Computing</span> and <span className="text-first">AI/ML</span>.
+          </h2>
 
-            <h2 className="text-second text-lg font-medium max-w-lg">undergraduate Computer Science student at Dalhousie University</h2>
-            
-            <h2 className="text-second leading-relaxed text-base max-w-xl">
-              originally from <span className="text-first"> Saigon, Vietnam</span>. after graduating highschool in 2023, i chose to study abroad in Canada to do my undergrad in Computer Science. 
-            </h2>
-            
-            <h2 className="text-second leading-relaxed text-base max-w-xl">
-              i'm passionate about learning and working in areas like <span className="text-first">Full-Stack Development</span>, <span className="text-first">Cloud Computing</span> and <span className="text-first">AI/ML</span>.
-            </h2>
-
-            {/* Icons */}
-            <div className="flex items-center gap-5">
+          {/* Icons */}
+          <div className="flex items-center gap-5 justify-center lg:justify-start">
 
                 {/* GitHub */}
                 <div className="flex items-center gap-2">
@@ -64,7 +64,8 @@ export default function Header() {
                       <path d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z" stroke="#034264" strokeWidth="1.29"/> 
                       <path d="M8 12H16" stroke="#034264" strokeWidth="1.1" strokeLinecap="round"/> 
                       <path d="M8 8H16" stroke="#034264" strokeWidth="1.1" strokeLinecap="round"/> 
-                      <path d="M8 16H13" stroke="#034264" strokeWidth="1.1" strokeLinecap="round"/> </g>
+                      <path d="M8 16H13" stroke="#034264" strokeWidth="1.1" strokeLinecap="round"/> 
+                    </g>
                   </svg>
                   <a 
                     href="/Phuong (Julia) Pham - Resume.pdf"
@@ -76,12 +77,15 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex-shrink-0">
+          {/* Picture on right for large screens, top for small screens */}
+          <div className="mb-6 lg:mb-0 lg:ml-10 flex justify-center">
+            <div className="w-40 lg:w-64 aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl">
               <img 
-                className="w-56 h-56 lg:w-64 lg:h-64 rounded-full border-4 border-white shadow-xl" 
+                className="w-full h-full object-cover"
                 src="/phuongwj.jpg" 
                 alt="Julia's picture"
               />
+            </div>
           </div>
         </section>
     </>
