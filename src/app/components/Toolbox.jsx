@@ -16,7 +16,7 @@ export default function Toolbox() {
       <section className="flex flex-col items-center gap-4">
 
         {/* Tabs */}
-        <div className="w-fit bg-widBg rounded-lg p-1">
+        <div className="flex flex-wrap justify-center w-fit bg-widBg rounded-lg p-1">
           {skills.map((skill, index) => (
             <button
               key={skill.id}
