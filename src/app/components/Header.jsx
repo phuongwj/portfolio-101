@@ -77,14 +77,11 @@ export default function Header() {
           </div>
 
           <div className="flex-shrink-0">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary/20 to-portfolio-secondary/20 rounded-full blur-2xl scale-110"></div>
               <img 
-                className="relative w-56 h-56 lg:w-64 lg:h-64 rounded-full object-cover border-4 border-white shadow-xl" 
+                className="w-56 h-56 lg:w-64 lg:h-64 rounded-full border-4 border-white shadow-xl" 
                 src="/phuongwj.jpg" 
                 alt="Julia's picture"
               />
-            </div>
           </div>
         </section>
     </>
