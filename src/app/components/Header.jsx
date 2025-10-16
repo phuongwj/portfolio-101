@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -79,11 +80,14 @@ export default function Header() {
 
           {/* Picture on right for large screens, top for small screens */}
           <div className="mb-6 lg:mb-0 lg:ml-10 flex justify-center">
-            <div className="w-40 lg:w-64 aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl">
-              <img 
-                className="w-full h-full object-cover"
-                src="/phuongwj.jpg" 
+            <div className="w-40 lg:w-64 aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl relative">
+              <Image
+                src="/phuongwj.jpg"
                 alt="Julia's picture"
+                width={256}
+                height={256}
+                className="object-cover w-full h-full"
+                priority
               />
             </div>
           </div>
